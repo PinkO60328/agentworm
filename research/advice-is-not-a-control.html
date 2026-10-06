@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html data-dpl-id="dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" lang="en"
+  class="instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased">
+
+<head>
+    <script src="../nav-fix.js"></script>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <link rel="preload"
+    href="/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="preload"
+    href="/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" as="font"
+    crossorigin="" type="font/woff2" />
+  <link rel="stylesheet" href="/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+    data-precedence="next" />
+  <link rel="preload" as="script" fetchPriority="low"
+    href="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+  <script src="/_next/static/chunks/453pof2vctwbe.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <script src="/_next/static/chunks/3psrapv-whp7s.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <script src="/_next/static/chunks/1upe53-127sm4.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <script src="/_next/static/chunks/turbopack-3cgtxutfl_k-9.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <script src="/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <script src="/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+  <meta name="next-size-adjust" content="" />
+  <meta name="theme-color" content="#000000" />
+  <title>7 agent toolkits give a model a buy tool. In their open code, none checks the token on the way to the
+    signature. · Agent Wormhole</title>
+  <meta name="description"
+    content="We traced the buy path from tool call to signature in Solana Agent Kit, GOAT, the ElizaOS Solana plugin, Coinbase AgentKit, Phantom&#x27;s MCP server, OKX Onchain OS and the Jupiter CLI. In the open code of all seven, nothing on that path checks the token being bought. Three offer a check as a separate tool the model may choose not to call. The article gives commits, files and a method you can repeat." />
+  <meta name="application-name" content="Agent Wormhole" />
+  <meta name="keywords"
+    content="AI agent security,agentic commerce security,prompt injection,x402 security,quote conformance,agentic trading guard,Robinhood MCP security,MCP security,agent payment verification,prompt worm" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://agentwormhole.com/research/advice-is-not-a-control" />
+  <meta property="og:title"
+    content="7 toolkits give a model a buy tool. In open code, none checks the token before the signature." />
+  <meta property="og:description"
+    content="Three agent toolkits ship a token check as a separate tool. The model decides whether to call it, and the buy path never asks. Every path is pinned to a commit, and the method is included." />
+  <meta property="og:image"
+    content="https://agentwormhole.com/research/advice-is-not-a-control/opengraph-image.png?opengraph-image.22x-zr3lg_i56.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Advice is not a control — in seven agent toolkits, no open-code token check sits between the model and the signature
+" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2026-09-28" />
+  <meta property="article:author" content="Agent Wormhole" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="7 toolkits give a model a buy tool. In open code, none checks the token before the signature." />
+  <meta name="twitter:description"
+    content="Three of seven toolkits offer a token check as a tool the model may skip. A check the model can decline is advice, not a control." />
+  <meta name="twitter:image"
+    content="https://agentwormhole.com/research/advice-is-not-a-control/opengraph-image.png?opengraph-image.22x-zr3lg_i56.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+  <meta name="twitter:image:alt" content="Advice is not a control — in seven agent toolkits, no open-code token check sits between the model and the signature
+" />
+  <meta name="twitter:image:type" content="image/png" />
+  <meta name="twitter:image:width" content="1200" />
+  <meta name="twitter:image:height" content="630" />
+  <link rel="icon" href="/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" sizes="any"
+    type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+    sizes="180x180" type="image/png" />
+  <script src="/_next/static/chunks/0cz1d0mv5g_q7.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" noModule=""></script>
+</head>
+
+<body class="flex min-h-full flex-col">
+  <div hidden=""><!--$--><!--/$--></div>
+  <main class="relative bg-black">
+    <div class="mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24"><a href="https://agentwormhole.com"
+        class="font-body text-sm text-white/60 hover:text-white">← agentwormhole.com</a>
+      <p class="mb-6 mt-10 font-body text-sm text-white/80">// Research · 2026-09-28</p>
+      <h1 class="font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl">Advice is not a
+        control.</h1>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">An agent
+        that can buy a token has a path from the model&#x27;s tool call to a signature. We read that path, file by file,
+        in seven open-source toolkits that give a model a tool to buy tokens on Solana: Solana Agent Kit, GOAT, the
+        ElizaOS Solana plugin, Coinbase AgentKit, Phantom&#x27;s MCP server, OKX&#x27;s Onchain OS skills and
+        Jupiter&#x27;s own CLI. <strong class="font-medium text-white">In the open code of all seven, nothing between
+          the tool call and the signature checks the token being bought.</strong></p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Three of
+        them do ship a token check. Solana Agent Kit and GOAT have a Rugcheck lookup, and OKX&#x27;s CLI has a honeypot
+        classifier and a security scan. In each case the check sits outside the command that signs. The model decides
+        whether to call it, and the buy path never asks whether it did.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">A check the
+        model can decline is advice. The purchases a check exists to stop are the ones where the model&#x27;s judgement
+        has already been moved: by a persuasive user, by a token description written to persuade it, or by a symbol that
+        names more than one token. A model in that state can skip advice. A control has to sit where the model cannot
+        route around it, which is the signing path.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">We include
+        our own package, <code class="font-mono text-[12.5px] text-white/90">wormhole-x402</code>, because it does sit
+        in the signing path. It is a payment guard, not a token check. We gave it three Jupiter swaps. It refused all
+        three and never passed one to the wallet&#x27;s signing method, because a swap is not the payment it was written
+        to allow. It cannot tell a good swap from a bad one.</p>
+      <h2 id="paths" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Seven
+        buy paths, read end to end</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">For each
+        toolkit we started at the tool a model calls to buy, and followed every function to the point where a private
+        key signs. The table records what sits on that path at the stated commit. &quot;None&quot; means not found after
+        reading the whole path and tracing every caller of every token-check function in the repository.</p>
+      <div class="scroll-x liquid-glass mt-6 rounded-[1.25rem] px-2 py-2">
+        <table class="w-full border-collapse text-left" style="min-width:990px">
+          <thead>
+            <tr>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Toolkit · commit</th>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Token check on the buy path</th>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Token check the model may call</th>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Simulation before signing</th>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Slippage if unset</th>
+              <th
+                class="border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45">
+                Other controls on the path</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">Solana Agent Kit · 1254fe5
+              </td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">RUGCHECK
+                action; nothing on the TRADE path calls it</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None; RPC
+                preflight after signing</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Jupiter
+                dynamic</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Schema
+                shape checks; optional signOnly; priority fee capped at 10,000,000 lamports. No spend cap, no
+                confirmation</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">GOAT SDK · f2eedc2</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">rugcheck
+                plugin (5 tools); nothing outside the plugin calls it</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None; RPC
+                preflight after signing</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">
+                Jupiter&#x27;s default (measured: 50 bps)</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None with
+                the keypair client. Crossmint and Lit wallets sign outside the toolkit (not evaluated)</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">ElizaOS plugin-solana 1.2.6
+                · npm gitHead 646c632</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None
+                found</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None; RPC
+                preflight after signing</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Dynamic;
+                service path starts at 200 bps, sell retries reach 3,200</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Keypair
+                match; SOL balance on the service path. No spend cap, no confirmation</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">Coinbase AgentKit (TS) ·
+                2e6dbaf</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None
+                found</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None; RPC
+                preflight after signing (keypair, CDP); Privy not visible</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">50 bps
+              </td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Solana
+                mainnet only. No spend cap, no confirmation in toolkit code</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">Phantom MCP 1.2.8 · 618f616
+              </td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Unclear:
+                none client-side; server step not visible</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Unclear:
+                simulate_transaction returns security warnings, contents not visible; buy_token never calls it</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">
+                Server-side /prepare; the model cannot skip it; contents not visible</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Auto,
+                computed server-side</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">execute
+                defaults to false (the model sets it); server daily USD limit</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">OKX Onchain OS · 9de8161
+              </td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None on
+                swap execute</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Honeypot
+                classifier on quote output; security token-scan</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Backend,
+                before signing; aborts if the simulation reports failure</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Auto,
+                with slippagePercent 0.5</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Backend
+                warning 81362 at broadcast, bypassed with --force</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">Jupiter CLI · d8d7386</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">No check
+                tool: spot tokens displays the isVerified label; a separate Jupiter skill tells the model to read it
+              </td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None
+                client-side; --dry-run available</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Jupiter
+                real-time estimate</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">Amount
+                and slippage validation</td>
+            </tr>
+            <tr class="border-b border-white/[0.06] last:border-0">
+              <td class="px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white">Agent Wormhole
+                wormhole-x402 0.9.9 · ec61fbd</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None: a
+                payment guard, not a token check</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">n/a</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">None;
+                offline byte inspection</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">n/a</td>
+              <td class="px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75">In the
+                signing path; refused 3 of 3 swaps, 0 inner signs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">In all
+        seven, nothing in the open code between the tool call and the signature looks at the token being bought. Several
+        pass the transaction through a server step we cannot read: Phantom&#x27;s <code
+          class="font-mono text-[12.5px] text-white/90">/prepare</code>, OKX&#x27;s pre-transaction simulation,
+        Jupiter&#x27;s Ultra order and execute endpoints, the CDP or Privy signers AgentKit can use, and the Crossmint
+        or Lit wallets GOAT can use. What those steps check is not in the code.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Four paths
+        rely on the RPC&#x27;s default preflight: Solana Agent Kit, GOAT, ElizaOS and AgentKit. Preflight simulates the
+        already-signed transaction and rejects it only if it would fail on-chain. It says nothing about the token
+        received. A purchase of a token that cannot later be sold does not fail. In none of these paths can the model
+        change preflight.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Three of
+        these buy paths do not reach a signature as published today. Solana Agent Kit&#x27;s Jupiter path, GOAT&#x27;s
+        TypeScript Jupiter plugin and the <code class="font-mono text-[12.5px] text-white/90">SWAP_SOLANA</code> action
+        in ElizaOS plugin-solana 1.2.6 all call <code
+          class="font-mono text-[12.5px] text-white/90">quote-api.jup.ag/v6</code>. Solana Agent Kit and ElizaOS name
+        that host in their own code (<code class="font-mono text-[12.5px] text-white/90">constants.ts:28</code> and
+        <code class="font-mono text-[12.5px] text-white/90">tools/trade.ts:72</code>; <code
+          class="font-mono text-[12.5px] text-white/90">swap.ts:83</code> and <code
+          class="font-mono text-[12.5px] text-white/90">105</code>). GOAT reaches it through the default base path of
+        <code class="font-mono text-[12.5px] text-white/90">@jup-ag/api</code> 6.0.31, the exact version it pins. On
+        2026-09-28 that host returned no A record, and curl could not resolve it. As published, those three paths fail
+        at the quote fetch and sign nothing. The design finding applies to any fork or update that points them at a live
+        host. The ElizaOS plugin has a second entry point, the service method that trading plugins call, which gets its
+        quotes from an external <code class="font-mono text-[12.5px] text-white/90">JUPITER_SERVICE</code> (<code
+          class="font-mono text-[12.5px] text-white/90">service.ts:336-338</code>). We did not examine that service, so
+        we cannot say whether that path reaches a signature today. AgentKit resolves <code
+          class="font-mono text-[12.5px] text-white/90">@jup-ag/api</code> 6.0.40 from its lockfile and 6.0.48 on a
+        fresh install. Created without an API key, as AgentKit creates it, 6.0.40 calls <code
+          class="font-mono text-[12.5px] text-white/90">api.jup.ag/swap/v1</code> and 6.0.48 calls <code
+          class="font-mono text-[12.5px] text-white/90">lite-api.jup.ag/swap/v1</code>. Both hosts answered. GOAT&#x27;s
+        Python port calls <code class="font-mono text-[12.5px] text-white/90">api.jup.ag/swap/v1</code>.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Solana
+        Agent Kit has other actions that can buy. We checked one, <code
+          class="font-mono text-[12.5px] text-white/90">OKX_EXECUTE_SWAP</code>, which delegates to <code
+          class="font-mono text-[12.5px] text-white/90">@okx-dex/okx-dex-sdk</code>. We found no read of <code
+          class="font-mono text-[12.5px] text-white/90">isHoneyPot</code> in that SDK&#x27;s JavaScript at 1.0.13 or
+        1.0.18. The field appears only in its type definitions. By npm downloads for 2026-09-21 to 2026-09-27, the most
+        used packages here are Coinbase AgentKit (6,350, all chains), Phantom&#x27;s MCP server (4,491) and Solana Agent
+        Kit (1,257).</p>
+      <h2 id="optional" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">
+        Where a check exists, the model decides</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Solana
+        Agent Kit registers a <code class="font-mono text-[12.5px] text-white/90">RUGCHECK</code> action beside <code
+          class="font-mono text-[12.5px] text-white/90">TRADE</code> in the same plugin (<code
+          class="font-mono text-[12.5px] text-white/90">plugin-token/src/index.ts:143</code>). It fetches
+        Rugcheck&#x27;s summary report for a mint. Searching the whole repository, the only references are its own
+        files, its registration and the docs. The TRADE action&#x27;s schema requires the output mint to be a string of
+        at least 32 characters (<code class="font-mono text-[12.5px] text-white/90">actions/trade.ts:57</code>). The
+        handler parses it as a public key, and the tool puts it into the quote URL (<code
+          class="font-mono text-[12.5px] text-white/90">tools/trade.ts:47</code>). <code
+          class="font-mono text-[12.5px] text-white/90">SolanaAgentKit.use()</code>, <code
+          class="font-mono text-[12.5px] text-white/90">executeAction</code> and all five framework adapters (Claude,
+        LangChain, OpenAI, Vercel AI and MCP) pass the call through with no hook between them and the handler. The
+        Claude, OpenAI and Vercel AI adapters go through <code
+          class="font-mono text-[12.5px] text-white/90">executeAction</code>, which parses the schema and calls the
+        handler. The LangChain and MCP adapters call the handler directly (<code
+          class="font-mono text-[12.5px] text-white/90">core/src/langchain/index.ts:20</code>, <code
+          class="font-mono text-[12.5px] text-white/90">adapter-mcp/src/index.ts:76</code>).</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">GOAT ships
+        Rugcheck as its own plugin with five read-only tools (<code
+          class="font-mono text-[12.5px] text-white/90">plugins/rugcheck/src/rugcheck.service.ts:8-50</code>). Outside
+        that plugin and its Python port, the word appears only in the README, the Python project file and lockfiles.
+        GOAT&#x27;s core has no hook, approval or middleware mechanism: <code
+          class="font-mono text-[12.5px] text-white/90">getTools</code> only collects the tools. In the week to
+        2026-09-27 the rugcheck plugin had 11 npm downloads, against 78 for the Jupiter plugin.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">OKX has the
+        most developed check of the seven, and it shows the pattern most clearly. <code
+          class="font-mono text-[12.5px] text-white/90">classify_swap_route</code> marks a route <code
+          class="font-mono text-[12.5px] text-white/90">block</code> with the reason &quot;to-token is a honeypot&quot;
+        when the backend&#x27;s <code class="font-mono text-[12.5px] text-white/90">isHoneyPot</code> flag is true:</p>
+      <pre
+        class="scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85">// okx/onchainos-skills 9de8161 · cli/src/commands/risk_classify.rs:257-265
+    if token[&quot;isHoneyPot&quot;].as_bool().unwrap_or(false) {
+        let (side_action, reason) = if is_buy {
+            (SwapAction::Block, &quot;to-token is a honeypot&quot;)
+        } else {
+            (SwapAction::Warn, &quot;from-token is a honeypot; exit allowed&quot;)
+        };
+        action = action.stricter(side_action);
+        reasons.push(reason.to_string());
+    }</pre>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+        classifier runs on the output of <code class="font-mono text-[12.5px] text-white/90">swap quote</code> and <code
+          class="font-mono text-[12.5px] text-white/90">swap swap</code>, and of the MCP tools <code
+          class="font-mono text-[12.5px] text-white/90">swap_quote</code> and <code
+          class="font-mono text-[12.5px] text-white/90">swap_swap</code> (<code
+          class="font-mono text-[12.5px] text-white/90">swap.rs:203</code>, <code
+          class="font-mono text-[12.5px] text-white/90">312</code>; <code
+          class="font-mono text-[12.5px] text-white/90">mcp/mod.rs:1700</code>, <code
+          class="font-mono text-[12.5px] text-white/90">1733</code>). There it annotates and does not reject. The
+        skill&#x27;s reference says so: &quot;exit code stays 0 — classification, not rejection&quot; (<code
+          class="font-mono text-[12.5px] text-white/90">swap.md:94</code>). The command that signs is <code
+          class="font-mono text-[12.5px] text-white/90">swap execute</code>. Neither <code
+          class="font-mono text-[12.5px] text-white/90">cmd_execute</code> nor the batch path <code
+          class="font-mono text-[12.5px] text-white/90">cmd_execute_batch</code> calls the classifier or reads <code
+          class="font-mono text-[12.5px] text-white/90">isHoneyPot</code>. So a block verdict stops a purchase only if
+        the model first ran a quote, read the field, and chose to stop. A separate <code
+          class="font-mono text-[12.5px] text-white/90">security token-scan</code> command detects honeypots, high tax
+        and mint risks, and nothing on the execute path calls it either.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">At
+        broadcast, the backend can return risk warning 81362. Without <code
+          class="font-mono text-[12.5px] text-white/90">--force</code>, the CLI returns a result asking for
+        confirmation. With <code class="font-mono text-[12.5px] text-white/90">--force</code>, it sends <code
+          class="font-mono text-[12.5px] text-white/90">skipWarning: true</code> (<code
+          class="font-mono text-[12.5px] text-white/90">transfer/mod.rs:594-596</code>). The skill asks the model to get
+        the user&#x27;s confirmation before adding the flag. No code checks that it did.</p>
+      <h2 id="router" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">The
+        router builds the order either way</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Jupiter is
+        the router behind four of the other six paths, and its own CLI is the most direct way to put a model in front of
+        it. <code class="font-mono text-[12.5px] text-white/90">jup spot swap</code> resolves <code
+          class="font-mono text-[12.5px] text-white/90">--to</code> by taking the first hit of a token search (<code
+          class="font-mono text-[12.5px] text-white/90">DatapiClient.ts:178-187</code>). It then requests an Ultra
+        order, signs it locally and posts it for execution (<code
+          class="font-mono text-[12.5px] text-white/90">Swap.ts:49-116</code>). Nothing on that path reads <code
+          class="font-mono text-[12.5px] text-white/90">isVerified</code>, the organic score or the <code
+          class="font-mono text-[12.5px] text-white/90">isSus</code> flag. The CLI prints <code
+          class="font-mono text-[12.5px] text-white/90">isVerified</code> in its <code
+          class="font-mono text-[12.5px] text-white/90">spot tokens</code> and <code
+          class="font-mono text-[12.5px] text-white/90">spot portfolio</code> output, not in <code
+          class="font-mono text-[12.5px] text-white/90">quote</code> or <code
+          class="font-mono text-[12.5px] text-white/90">swap</code>, and its own docs and <code
+          class="font-mono text-[12.5px] text-white/90">llms.txt</code> give no trust guidance. Jupiter&#x27;s separate
+        integrating-jupiter agent skill (jup-ag/agent-skills, <code
+          class="font-mono text-[12.5px] text-white/90">SKILL.md:240</code>) tells a model that the &quot;primary trust
+        signal is top-level <code class="font-mono text-[12.5px] text-white/90">isVerified</code>&quot;. That is
+        guidance, and it does not ship with the CLI.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">We asked
+        Ultra for an order on each of the 30 most recently listed tokens, and on each token we caught carrying
+        Jupiter&#x27;s <code class="font-mono text-[12.5px] text-white/90">isSus</code> flag at the moment of the order:
+      </p>
+      <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">Tokens sampled (tokens/v2/recent, 16:58–16:59
+            UTC)</span><code class="font-mono text-[13px] font-medium text-white sm:text-right">30</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">isVerified</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">0 of 30</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">organicScoreLabel low</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">30 of 30</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">isSus flag present</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">0 of 30</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">Ultra /order returned a signable
+            transaction</span><code class="font-mono text-[13px] font-medium text-white sm:text-right">30 of 30</code>
+        </div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">Tokens flagged isSus at the moment of the order
+            (separate scan, 16:59–17:01 UTC)</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">3</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">Ultra /order returned a signable transaction for a
+            flagged token</span><code class="font-mono text-[13px] font-medium text-white sm:text-right">3 of 3</code>
+        </div>
+      </div>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">This is not
+        a defect in the router. A router is a market and is not asked to judge tokens. What it means is that a check the
+        agent skips is not caught further down. Ultra returned the same kind of order for tokens Jupiter&#x27;s own
+        token API had flagged as for those it had not. Three flagged tokens is a small sample, and it shows only that a
+        flag did not stop an order, not how often it would.</p>
+      <h2 id="none" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Two
+        paths give the model nothing to consult</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Coinbase
+        AgentKit&#x27;s Jupiter action converts the output mint with <code
+          class="font-mono text-[12.5px] text-white/90">new PublicKey()</code> and passes it to the quote (<code
+          class="font-mono text-[12.5px] text-white/90">jupiterActionProvider.ts:48</code>). Its description tells the
+        model that input and output tokens &quot;must be valid SPL token mints&quot; (line 33). The code does not check
+        the output mint. It reads only the input mint, with <code
+          class="font-mono text-[12.5px] text-white/90">getMint</code>, for its decimals (line 52), which fails unless
+        the input is an SPL mint. AgentKit can sign through a local keypair, CDP or Privy. The latter two sign
+        server-side under operator-configured policies that we did not evaluate.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">ElizaOS
+        plugin-solana 1.2.6 takes the token addresses from the conversation. The <code
+          class="font-mono text-[12.5px] text-white/90">SWAP_SOLANA</code> handler makes a separate model call over the
+        recent messages to extract the input token, output token and amount (<code
+          class="font-mono text-[12.5px] text-white/90">swap.ts:271-281</code>). If that call returns a contract
+        address, the handler uses it as it is. A symbol without an address is resolved only against tokens already in
+        the wallet, so buying a new token requires its address to appear in the chat. That address is not checked.</p>
+      <h2 id="in-the-path"
+        class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Two controls the
+        model cannot set</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+        Phantom&#x27;s <code class="font-mono text-[12.5px] text-white/90">/prepare</code> is the one server step on a
+        surveyed buy path that can refuse with a scanner verdict the model cannot override. The session builds its
+        client as a user wallet (<code class="font-mono text-[12.5px] text-white/90">session/manager.ts:449</code>,
+        <code class="font-mono text-[12.5px] text-white/90">495</code>), so each Solana sign-and-send first posts to
+        <code class="font-mono text-[12.5px] text-white/90">/prepare</code> with a simulation config (<code
+          class="font-mono text-[12.5px] text-white/90">PhantomClient.ts:320-346</code>). That step can refuse with
+        <code class="font-mono text-[12.5px] text-white/90">transaction-blocked</code>, carrying a scanner result, or
+        with <code class="font-mono text-[12.5px] text-white/90">spending-limit-exceeded</code>, against a daily USD
+        limit (<code class="font-mono text-[12.5px] text-white/90">client/src/types.ts:161-189</code>). The model cannot
+        skip it. The code does not show whether the scanner looks at the output token, so the table says unclear rather
+        than none. OKX&#x27;s backend also simulates every execute before signing, and no flag skips it (<code
+          class="font-mono text-[12.5px] text-white/90">transfer/mod.rs:336</code>). It aborts only when the simulation
+        reports failure (369-380), and the risk warning 81362 that can follow at broadcast is overridden with <code
+          class="font-mono text-[12.5px] text-white/90">--force</code>.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The model
+        does control the rest of Phantom&#x27;s path. <code
+          class="font-mono text-[12.5px] text-white/90">buy_token</code> returns a quote unless <code
+          class="font-mono text-[12.5px] text-white/90">execute</code> is true:</p>
+      <pre
+        class="scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85">// phantom/phantom-connect-sdk 618f616 · packages/cli/src/actions/buy-token.ts:291-299
+    if (!execute) {
+      logger.info(&quot;Returning quote only (execute: false)&quot;);
+      return { quoteRequest, quoteResponse };
+    }
+
+    logger.info(`Executing ${isCrossChain ? &quot;cross-chain&quot; : &quot;&quot;} swap transaction (execute: true)`);
+
+    const swapResult = await executeSwap({
+      quoteResponse,</pre>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The model
+        sets <code class="font-mono text-[12.5px] text-white/90">execute</code>, so a single call with <code
+          class="font-mono text-[12.5px] text-white/90">execute: true</code> signs and broadcasts. <code
+          class="font-mono text-[12.5px] text-white/90">buy_token</code> never calls the separate <code
+          class="font-mono text-[12.5px] text-white/90">simulate_transaction</code> tool. The same codebase does enforce
+        this pattern elsewhere: <code class="font-mono text-[12.5px] text-white/90">pay_api_access</code> throws on a
+        simulation block before signing (<code
+          class="font-mono text-[12.5px] text-white/90">pay-api-access.ts:155-167</code>). The buy path does not.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The second
+        control is in code newer than the ElizaOS plugin surveyed above. On the elizaOS/eliza develop branch (<code
+          class="font-mono text-[12.5px] text-white/90">d0cd039</code>), Solana swaps live in <code
+          class="font-mono text-[12.5px] text-white/90">plugins/plugin-wallet</code>. Swaps the model requests through
+        the plugin&#x27;s wallet action pass a confirmation gate (<code
+          class="font-mono text-[12.5px] text-white/90">chains/wallet-action.ts:486</code>) that proceeds only after the
+        user confirms in a later turn. The gate&#x27;s own comment states that &quot;the LLM cannot bypass this gate by
+        setting request params&quot; (<code
+          class="font-mono text-[12.5px] text-white/90">security/wallet-financial-confirmation.ts:9-13</code>), and the
+        Solana helper <code class="font-mono text-[12.5px] text-white/90">isConfirmed</code> returns false for any
+        confirmed flag the model supplies (<code
+          class="font-mono text-[12.5px] text-white/90">chains/solana/actions/confirmation.ts:17-20</code>). The same
+        action refuses financial writes on messages flagged as suspected prompt injection (<code
+          class="font-mono text-[12.5px] text-white/90">chains/wallet-action.ts:409</code>). The gate does not cover
+        every route to a signature. <code class="font-mono text-[12.5px] text-white/90">SolanaService</code> still
+        exports the <code class="font-mono text-[12.5px] text-white/90">executeSwap</code> entry point that trading
+        plugins call (<code class="font-mono text-[12.5px] text-white/90">chains/solana/service.ts:2463</code>), and
+        nothing in it calls the gate. We did not read the plugin&#x27;s Raydium swap service. For requests that come
+        through the wallet action, this is a control in the path. It is not a token check: we found none in <code
+          class="font-mono text-[12.5px] text-white/90">SolanaService.swap</code> or <code
+          class="font-mono text-[12.5px] text-white/90">buildJupiterSwapTransaction</code>. The code ships as <code
+          class="font-mono text-[12.5px] text-white/90">@elizaos/plugin-wallet</code> (152 downloads in the week to
+        2026-09-27), and we did not confirm that the published versions match develop.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Of the
+        refusals we could see in the surveyed toolkits&#x27; code, these two are the only ones that can stop a
+        well-formed buy that would succeed on-chain, and that the model cannot override. Signing policies that operators
+        configure for CDP, Privy, Crossmint or Lit may be others; we did not evaluate them. Neither of the two is a
+        token check in code we can read. Phantom&#x27;s step is not visible, and ElizaOS&#x27;s asks a person.</p>
+      <h2 id="ours" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Our
+        own package is in the path, and cannot see the token</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><code
+          class="font-mono text-[12.5px] text-white/90">wormhole-x402</code> ships <code
+          class="font-mono text-[12.5px] text-white/90">guardSigner</code>, a wrapper around a Solana wallet&#x27;s
+        signing methods. It lets a signature through only when <code
+          class="font-mono text-[12.5px] text-white/90">inspectPayment</code> finds that the transaction matches an x402
+        payment quote, and it refuses when there is no quote. It inspects the bytes offline, with no RPC, and the wallet
+        signs the bytes that were inspected, not the caller&#x27;s object. That puts it in the position this article
+        argues for. It was built for payments, so we ran it against real Jupiter swaps to see what it does outside that
+        job.</p>
+      <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">SOL → USDC, default route, 2 lookup
+            tables</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">abstain → refused</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">SOL → BONK, default route, 3 lookup
+            tables</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">abstain → refused</code></div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">SOL → USDC, legacy, no lookup tables</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">refuse · X402-003, X402-006, X402-007</code>
+        </div>
+        <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+            class="font-body text-[13px] font-light text-white/70">Inner wallet signTransaction reached</span><code
+            class="font-mono text-[13px] font-medium text-white sm:text-right">0 times</code></div>
+      </div>
+      <pre
+        class="scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85">// agent-wormhole ec61fbd · x402-guard/src/index.ts:1100-1106, 1118-1119
+    const quote = getQuote();
+    if (!quote) {
+      throw new Error(
+        `x402-guard: refusing to sign via ${method}() — no payment quote was ` +
+          &quot;supplied, so there is nothing to check this transaction against.&quot;,
+      );
+    }
+    // …
+    const verdict = inspectPayment(serialized, quote, opts);
+    if (verdict.decision !== &quot;allow&quot;) {</pre>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The default
+        routes abstain because a transaction that uses address lookup tables names accounts that are not in its own
+        bytes, and the guard will not resolve them without RPC (<code
+          class="font-mono text-[12.5px] text-white/90">index.ts:301-309</code>). The legacy route is refused because it
+        invokes Jupiter&#x27;s program, which is outside the guard&#x27;s program allowlist (X402-003). It also raised
+        findings under two further rules, X402-006 and X402-007.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">So the
+        guard refuses a swap into USDC and a swap into anything else in the same way. It has no notion of the token and
+        makes no judgement about it. An agent that needs to buy tokens cannot use it for that, and we do not suggest it.
+      </p>
+      <h2 id="method" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">
+        Method</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The code
+        read needs no account. The live measurements used Jupiter&#x27;s unauthenticated endpoints. For each toolkit we
+        cloned the repository, recorded the commit with <code
+          class="font-mono text-[12.5px] text-white/90">git rev-parse HEAD</code>, and started at the tool the model
+        calls to buy. We read every function from there to the signature. That included the adapters that expose the
+        tool to a model framework and the alternative wallet clients a toolkit offers. We then searched each tree for
+        token-check and control vocabulary and traced every caller of whatever turned up back toward the buy entry
+        point. A check that no buy path calls is recorded as offered, not enforced.</p>
+      <pre
+        class="scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85"># toolkits, cloned and pinned
+sendaifun/solana-agent-kit   1254fe550872ee48d42f168fc8ca854c87ab6eff
+  packages/plugin-token/src/jupiter/actions/trade.ts     TRADE handler
+  packages/plugin-token/src/jupiter/tools/trade.ts       quote, swap, sign
+  packages/core/src/utils/keypairWallet.ts               sign + send
+  packages/core/src/{claude,langchain,openai,vercel-ai}, packages/adapter-mcp
+goat-sdk/goat                f2eedc2f041589322c0db39d59a67757014910a0
+  typescript/packages/plugins/jupiter/src/jupiter.service.ts
+  typescript/packages/wallets/solana/src/SolanaKeypairWalletClient.ts
+coinbase/agentkit            2e6dbaf725b9ec5f3b53003278100b0e655c214d
+  typescript/agentkit/src/action-providers/jupiter/jupiterActionProvider.ts
+phantom/phantom-connect-sdk  618f6165112f0ecd4986773698f26fdcb7dbc7ca
+  packages/cli/src/actions/buy-token.ts
+  packages/cli/src/utils/swap.ts
+  packages/client/src/PhantomClient.ts                   /prepare
+okx/onchainos-skills         9de8161d870fea8fad05c324f6c00a50cd88962d
+  cli/src/commands/swap.rs                               cmd_execute
+  cli/src/commands/risk_classify.rs                      classify_swap_route
+  cli/src/commands/agentic_wallet/transfer/mod.rs        sign_and_broadcast
+jup-ag/cli                   d8d7386691535469f7d17705ebfc5f432b96feba
+  src/lib/Swap.ts
+jup-ag/agent-skills          a2211e3f6a7caa03310c7a9a8d816e723b0bdc5f
+  skills/integrating-jupiter/SKILL.md
+
+# ElizaOS: github.com/elizaos-plugins/plugin-solana returns 404, so read npm
+npm pack @elizaos/plugin-solana@1.2.6
+  gitHead  646c632924826e2b75c2304a75ee56959fe4a460
+  sha256   dfd19648ecafc789bbd4c23fa5456b8927615aedc152c95993afc34dd03e7bc1
+  source   dist/index.js.map -&gt; sourcesContent -&gt; src/actions/swap.ts, src/service.ts
+elizaOS/eliza (develop)      d0cd0399e71046278452c5db0c3d9997a0f558d6
+  plugins/plugin-wallet/src/chains/wallet-action.ts
+  plugins/plugin-wallet/src/security/wallet-financial-confirmation.ts
+  plugins/plugin-wallet/src/chains/solana/
+
+# ours
+runningoffcode/agent-wormhole  ec61fbdf8e29679e4651f10a7ec6e4cdd4a7d610
+  x402-guard/src/index.ts      guardSigner, inspectPayment   (wormhole-x402@0.9.9)
+
+# in each tree, then trace every caller back toward the buy entry point
+grep -rniE &#x27;rugcheck|honeypot|isverified|issus|confirm|approve|simulate|skippreflight|policy&#x27;</pre>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">We also
+        read the JavaScript of <code class="font-mono text-[12.5px] text-white/90">@okx-dex/okx-dex-sdk</code> 1.0.13
+        and 1.0.18 for Solana Agent Kit&#x27;s OKX path. In <code
+          class="font-mono text-[12.5px] text-white/90">@jup-ag/api</code> we read the base path and <code
+          class="font-mono text-[12.5px] text-white/90">createJupiterApiClient</code> in 6.0.31, 6.0.39, 6.0.40, 6.0.44
+        and 6.0.48. We also read <code class="font-mono text-[12.5px] text-white/90">sendEncodedTransaction</code> in
+        <code class="font-mono text-[12.5px] text-white/90">@solana/web3.js</code> 1.98.4 to confirm the preflight
+        default.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Live
+        measurements were all taken on 2026-09-28 between 16:58 and 17:06 UTC, from one machine, and all were read-only.
+        Raw output was saved for each. DNS: <code class="font-mono text-[12.5px] text-white/90">quote-api.jup.ag</code>
+        returned no A record (NOERROR with no answer from 8.8.8.8 and 1.1.1.1; the local resolver returned NXDOMAIN, and
+        its status has varied between runs), and curl exited with code 6. Default slippage: a SOL to USDC quote with no
+        slippage parameter returned <code class="font-mono text-[12.5px] text-white/90">slippageBps</code> 50 on both
+        <code class="font-mono text-[12.5px] text-white/90">api.jup.ag/swap/v1</code> and <code
+          class="font-mono text-[12.5px] text-white/90">lite-api.jup.ag/swap/v1</code>.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Router: we
+        took the 30 most recent tokens from <code
+          class="font-mono text-[12.5px] text-white/90">lite-api.jup.ag/tokens/v2/recent</code> and sent each to <code
+          class="font-mono text-[12.5px] text-white/90">lite-api.jup.ag/ultra/v1/order</code>, the endpoint the Jupiter
+        CLI calls, with <code class="font-mono text-[12.5px] text-white/90">inputMint</code> SOL, <code
+          class="font-mono text-[12.5px] text-white/90">amount</code> 10,000,000 lamports (0.01 SOL), and a <code
+          class="font-mono text-[12.5px] text-white/90">taker</code> address that holds at least that much SOL. Ultra
+        returns no transaction for an unfunded taker: a freshly generated taker got &quot;Insufficient funds&quot; and
+        an empty transaction, and no taker got null. For flagged tokens we read <code
+          class="font-mono text-[12.5px] text-white/90">recent</code>, <code
+          class="font-mono text-[12.5px] text-white/90">toptrending/1h</code> and <code
+          class="font-mono text-[12.5px] text-white/90">toptraded/1h</code> repeatedly, requested an order with the same
+        parameters for each token that carried <code class="font-mono text-[12.5px] text-white/90">audit.isSus</code>,
+        and read the flag from token search within about a second of the order. The orders were built and never signed.
+      </p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Our guard:
+        we ran <code class="font-mono text-[12.5px] text-white/90">guardSigner</code> from a fresh build of the commit
+        above, which is byte-identical to the shipped <code
+          class="font-mono text-[12.5px] text-white/90">dist/index.js</code>. It wrapped a wallet that counts signing
+        calls and was given real Jupiter swap transactions built on <code
+          class="font-mono text-[12.5px] text-white/90">lite-api.jup.ag/swap/v1</code> for 1,000,000 lamports (0.001
+        SOL). The default routes were SOL to USDC and SOL to BONK, quoted with <code
+          class="font-mono text-[12.5px] text-white/90">slippageBps</code> 50. The legacy SOL to USDC with no lookup
+        tables was quoted with <code
+          class="font-mono text-[12.5px] text-white/90">onlyDirectRoutes=true&amp;asLegacyTransaction=true</code> and
+        built with <code class="font-mono text-[12.5px] text-white/90">asLegacyTransaction: true</code> in the <code
+          class="font-mono text-[12.5px] text-white/90">/swap</code> body. Setting <code
+          class="font-mono text-[12.5px] text-white/90">asLegacyTransaction</code> on the quote alone still returned a
+        versioned transaction with one lookup table.</p>
+      <h2 id="limits" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">
+        Limits</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><strong
+          class="font-medium text-white">A code read is not a runtime test.</strong> We did not run any toolkit&#x27;s
+        buy path with funds. When we say what a path does, we mean what its code does at the stated commit. A
+        configuration, wrapper or framework we did not read could add a check.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><strong
+          class="font-medium text-white">Server-side steps are not visible.</strong> Several steps run where we cannot
+        read them: Phantom&#x27;s <code class="font-mono text-[12.5px] text-white/90">/prepare</code> scanner and its
+        spending-limit value, OKX&#x27;s pre-transaction simulation and warning 81362, Jupiter Ultra&#x27;s order and
+        execute endpoints, the CDP and Privy signing policies AgentKit can use, and the Crossmint and Lit wallets GOAT
+        can use. Where a cell says unclear, that is what it means.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><strong
+          class="font-medium text-white">Toolkits change.</strong> Solana Agent Kit was last pushed on 2026-05-14 and
+        GOAT on 2026-07-02. OKX was pushed on the day we read it. We read the ElizaOS plugin from its npm source map at
+        1.2.6, because its GitHub repository returns 404. That plugin already has a successor with different controls,
+        which we read but did not fully trace. Its Raydium swap service is among what we did not read.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><strong
+          class="font-medium text-white">Some paths were read less fully than others.</strong> We checked Solana Agent
+        Kit&#x27;s <code class="font-mono text-[12.5px] text-white/90">OKX_EXECUTE_SWAP</code> path only by searching
+        the OKX SDK&#x27;s JavaScript, because running it needs OKX API keys. The ElizaOS service path gets its quote
+        and swap from an external <code class="font-mono text-[12.5px] text-white/90">JUPITER_SERVICE</code> that we did
+        not examine, so whether that path reaches a signature today is unknown. We did not trace Solana Agent Kit&#x27;s
+        Mayan, Drift, Sanctum or limit-order actions. We read only AgentKit&#x27;s TypeScript package, and only GOAT
+        Python&#x27;s Jupiter service, which has the same shape as the TypeScript one. We read the web3.js preflight
+        default in 1.98.4, while Solana Agent Kit&#x27;s lockfile resolves 1.98.2.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]"><strong
+          class="font-medium text-white">The measurements come from one machine in one eight-minute window.</strong> DNS
+        results, lookup-table counts and token flags vary with time and route. An earlier run the same day saw one
+        lookup table on the SOL to USDC route, and the run reported here saw two. The flagged-token result rests on
+        three tokens, and the flag is not stable: a fourth token was flagged in a list and unflagged in search fourteen
+        seconds later, so we left it out, and a fifth, seen flagged in a list, was not ordered.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">If we have
+        misread a path, or missed a check that exists, send the file and line through agentwormhole.com/contact. We will
+        correct this page and say that we did.</p>
+      <h2 id="why" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Why the
+        position matters more than the check</h2>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The token
+        checks in this survey are real and do useful work. Rugcheck summarises a mint, OKX&#x27;s backend flags
+        honeypots, and Jupiter labels verified and suspicious tokens. This survey is not about how good they are. It is
+        about where they sit.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">In every
+        path we read, the open code judges the token only if the model decides it should. That works while the model is
+        right. The purchases a check exists to stop are the ones where it is not: a user has argued it into a trade, a
+        token description was written to persuade it, or a symbol names more than one token. In each case the model has
+        been given a reason to believe this token is the right one, and a model that believes that has no reason to call
+        a tool that might disagree.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Moving the
+        check into the signing path means more than calling the same tool from a different place. The signer has to know
+        which token the transaction buys. On the default routes we built, the accounts that answer that question sat
+        behind two or three address lookup tables, which is why our own guard abstains. A token check in the signing
+        path has to resolve those tables, or verify the transaction against a quote it trusts, and then judge the token.
+        We have not built that, and this article does not announce that we have.</p>
+      <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Any agent
+        that can buy can be tested simply. Take the token check out of its tool list and ask it to buy. If the purchase
+        still goes through, the check was advice.</p>
+      <h2 id="sources" class="mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">
+        Sources</h2>
+      <div class="mt-4 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/55">
+        <ul class="grid gap-2">
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/sendaifun/solana-agent-kit/tree/1254fe550872ee48d42f168fc8ca854c87ab6eff">Solana
+              Agent Kit at 1254fe5</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/goat-sdk/goat/tree/f2eedc2f041589322c0db39d59a67757014910a0">GOAT SDK at
+              f2eedc2</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://www.npmjs.com/package/@elizaos/plugin-solana/v/1.2.6">@elizaos/plugin-solana 1.2.6 on
+              npm</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/elizaOS/eliza/tree/d0cd0399e71046278452c5db0c3d9997a0f558d6/plugins/plugin-wallet/src">elizaOS/eliza
+              develop at d0cd039: plugin-wallet</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/coinbase/agentkit/tree/2e6dbaf725b9ec5f3b53003278100b0e655c214d">Coinbase
+              AgentKit at 2e6dbaf</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/phantom/phantom-connect-sdk/tree/618f6165112f0ecd4986773698f26fdcb7dbc7ca">Phantom
+              Connect SDK (MCP server, CLI, client) at 618f616</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://docs.phantom.com/phantom-mcp-server/tools">Phantom MCP server tools documentation</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/okx/onchainos-skills/tree/9de8161d870fea8fad05c324f6c00a50cd88962d">OKX Onchain
+              OS skills at 9de8161</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/jup-ag/cli/tree/d8d7386691535469f7d17705ebfc5f432b96feba">Jupiter CLI at
+              d8d7386</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/jup-ag/agent-skills/tree/a2211e3f6a7caa03310c7a9a8d816e723b0bdc5f">Jupiter
+              agent-skills at a2211e3</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://github.com/runningoffcode/agent-wormhole/tree/ec61fbdf8e29679e4651f10a7ec6e4cdd4a7d610/x402-guard">Agent
+              Wormhole x402-guard at ec61fbd</a></li>
+          <li><a class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white"
+              href="https://www.npmjs.com/package/wormhole-x402">wormhole-x402 on npm</a></li>
+        </ul>
+      </div>
+      <p class="mt-16 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/50">Code read at the commits
+        stated, on 2026-09-28. Live measurements were read-only and taken from one machine between 16:58 and 17:06 UTC
+        on 2026-09-28; nothing was signed and nothing was broadcast. npm download counts are for 2026-09-21 to
+        2026-09-27. Negative findings mean “not found with substantial effort”, never “proven absent”. Corrections:
+        agentwormhole.com/contact.</p>
+    </div>
+  </main><!--$--><!--/$-->
+  <script src="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" id="_R_" async=""></script>
+  <script>(self.__next_f = self.__next_f || []).push([0])</script>
+  <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n42:I[68027,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\",1]\n:HL[\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"style\"]\n:HL[\"/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n"])</script>
+  <script>self.__next_f.push([1, "0:{\"P\":null,\"c\":[\"\",\"research\",\"advice-is-not-a-control\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"research\",{\"children\":[\"advice-is-not-a-control\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased\",\"children\":[\"$\",\"body\",null,{\"className\":\"flex min-h-full flex-col\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"relative bg-black\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://agentwormhole.com\",\"className\":\"font-body text-sm text-white/60 hover:text-white\",\"children\":\"← agentwormhole.com\"}],[\"$\",\"p\",null,{\"className\":\"mb-6 mt-10 font-body text-sm text-white/80\",\"children\":\"// Research · 2026-09-28\"}],[\"$\",\"h1\",null,{\"className\":\"font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl\",\"children\":\"Advice is not a control.\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"An agent that can buy a token has a path from the model's tool call to a signature. We read that path, file by file, in seven open-source toolkits that give a model a tool to buy tokens on Solana: Solana Agent Kit, GOAT, the ElizaOS Solana plugin, Coinbase AgentKit, Phantom's MCP server, OKX's Onchain OS skills and Jupiter's own CLI. \",[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"In the open code of all seven, nothing between the tool call and the signature checks the token being bought.\"}]]}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Three of them do ship a token check. Solana Agent Kit and GOAT have a Rugcheck lookup, and OKX's CLI has a honeypot classifier and a security scan. In each case the check sits outside the command that signs. The model decides whether to call it, and the buy path never asks whether it did.\"}],\"$L4\",\"$L5\",\"$L6\",\"$L7\",\"$L8\",\"$L9\",\"$La\",\"$Lb\",\"$Lc\",\"$Ld\",\"$Le\",\"$Lf\",\"$L10\",\"$L11\",\"$L12\",\"$L13\",\"$L14\",\"$L15\",\"$L16\",\"$L17\",\"$L18\",\"$L19\",\"$L1a\",\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\",\"$L1f\",\"$L20\",\"$L21\",\"$L22\",\"$L23\",\"$L24\",\"$L25\",\"$L26\",\"$L27\",\"$L28\",\"$L29\",\"$L2a\",\"$L2b\",\"$L2c\",\"$L2d\",\"$L2e\",\"$L2f\",\"$L30\",\"$L31\",\"$L32\",\"$L33\",\"$L34\",\"$L35\",\"$L36\",\"$L37\",\"$L38\",\"$L39\",\"$L3a\",\"$L3b\",\"$L3c\",\"$L3d\",\"$L3e\"]}]}],null,\"$L3f\"]}],{},null,false,null]},null,false,\"$@40\"]},null,false,\"$@40\"]},null,false,null],\"$L41\",false]],\"m\":\"$undefined\",\"G\":[\"$42\",[\"$L43\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\"}\n"])</script>
+  <script>self.__next_f.push([1, "4b:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"OutletBoundary\"]\n4c:\"$Sreact.suspense\"\n4f:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"ViewportBoundary\"]\n51:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"MetadataBoundary\"]\n4:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"A check the model can decline is advice. The purchases a check exists to stop are the ones where the model's judgement has already been moved: by a persuasive user, by a token description written to persuade it, or by a symbol that names more than one token. A model in that state can skip advice. A control has to sit where the model cannot route around it, which is the signing path.\"}]\n5:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"We include our own package, \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"wormhole-x402\"}],\", because it does sit in the signing path. It is a payment guard, not a token check. We gave it three Jupiter swaps. It refused all three and never passed one to the wallet's signing method, because a swap is not the payment it was written to allow. It cannot tell a good swap from a bad one.\"]}]\n6:[\"$\",\"h2\",null,{\"id\":\"paths\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Seven buy paths, read end to end\"}]\n7:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"For each toolkit we started at the tool a model calls to buy, and followed every function to the point where a private key signs. The table records what sits on that path at the stated commit. \\\"None\\\" means not found after reading the whole path and tracing every caller of every token-check function in the repository.\"}]\n"])</script>
+  <script>self.__next_f.push([1, "8:[\"$\",\"div\",null,{\"className\":\"scroll-x liquid-glass mt-6 rounded-[1.25rem] px-2 py-2\",\"children\":[\"$\",\"table\",null,{\"className\":\"w-full border-collapse text-left\",\"style\":{\"minWidth\":990},\"children\":[[\"$\",\"thead\",null,{\"children\":[\"$\",\"tr\",null,{\"children\":[[\"$\",\"th\",\"Toolkit · commit\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Toolkit · commit\"}],[\"$\",\"th\",\"Token check on the buy path\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Token check on the buy path\"}],[\"$\",\"th\",\"Token check the model may call\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Token check the model may call\"}],[\"$\",\"th\",\"Simulation before signing\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Simulation before signing\"}],[\"$\",\"th\",\"Slippage if unset\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Slippage if unset\"}],[\"$\",\"th\",\"Other controls on the path\",{\"className\":\"border-b border-white/10 px-4 py-3 align-bottom font-body text-[10.5px] font-medium uppercase tracking-[0.12em] text-white/45\",\"children\":\"Other controls on the path\"}]]}]}],[\"$\",\"tbody\",null,{\"children\":[[\"$\",\"tr\",\"0\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"Solana Agent Kit · 1254fe5\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"RUGCHECK action; nothing on the TRADE path calls it\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None; RPC preflight after signing\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Jupiter dynamic\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Schema shape checks; optional signOnly; priority fee capped at 10,000,000 lamports. No spend cap, no confirmation\"}]]}],[\"$\",\"tr\",\"1\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"GOAT SDK · f2eedc2\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"rugcheck plugin (5 tools); nothing outside the plugin calls it\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None; RPC preflight after signing\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Jupiter's default (measured: 50 bps)\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None with the keypair client. Crossmint and Lit wallets sign outside the toolkit (not evaluated)\"}]]}],\"$L44\",\"$L45\",\"$L46\",\"$L47\",\"$L48\",\"$L49\"]}]]}]}]\n"])</script>
+  <script>self.__next_f.push([1, "9:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"In all seven, nothing in the open code between the tool call and the signature looks at the token being bought. Several pass the transaction through a server step we cannot read: Phantom's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"/prepare\"}],\", OKX's pre-transaction simulation, Jupiter's Ultra order and execute endpoints, the CDP or Privy signers AgentKit can use, and the Crossmint or Lit wallets GOAT can use. What those steps check is not in the code.\"]}]\na:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Four paths rely on the RPC's default preflight: Solana Agent Kit, GOAT, ElizaOS and AgentKit. Preflight simulates the already-signed transaction and rejects it only if it would fail on-chain. It says nothing about the token received. A purchase of a token that cannot later be sold does not fail. In none of these paths can the model change preflight.\"}]\n"])</script>
+  <script>self.__next_f.push([1, "b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Three of these buy paths do not reach a signature as published today. Solana Agent Kit's Jupiter path, GOAT's TypeScript Jupiter plugin and the \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SWAP_SOLANA\"}],\" action in ElizaOS plugin-solana 1.2.6 all call \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"quote-api.jup.ag/v6\"}],\". Solana Agent Kit and ElizaOS name that host in their own code (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"constants.ts:28\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"tools/trade.ts:72\"}],\"; \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap.ts:83\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"105\"}],\"). GOAT reaches it through the default base path of \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@jup-ag/api\"}],\" 6.0.31, the exact version it pins. On 2026-09-28 that host returned no A record, and curl could not resolve it. As published, those three paths fail at the quote fetch and sign nothing. The design finding applies to any fork or update that points them at a live host. The ElizaOS plugin has a second entry point, the service method that trading plugins call, which gets its quotes from an external \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"JUPITER_SERVICE\"}],\" (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"service.ts:336-338\"}],\"). We did not examine that service, so we cannot say whether that path reaches a signature today. AgentKit resolves \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@jup-ag/api\"}],\" 6.0.40 from its lockfile and 6.0.48 on a fresh install. Created without an API key, as AgentKit creates it, 6.0.40 calls \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"api.jup.ag/swap/v1\"}],\" and 6.0.48 calls \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"lite-api.jup.ag/swap/v1\"}],\". Both hosts answered. GOAT's Python port calls \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"api.jup.ag/swap/v1\"}],\".\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "c:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Solana Agent Kit has other actions that can buy. We checked one, \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"OKX_EXECUTE_SWAP\"}],\", which delegates to \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@okx-dex/okx-dex-sdk\"}],\". We found no read of \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isHoneyPot\"}],\" in that SDK's JavaScript at 1.0.13 or 1.0.18. The field appears only in its type definitions. By npm downloads for 2026-09-21 to 2026-09-27, the most used packages here are Coinbase AgentKit (6,350, all chains), Phantom's MCP server (4,491) and Solana Agent Kit (1,257).\"]}]\nd:[\"$\",\"h2\",null,{\"id\":\"optional\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Where a check exists, the model decides\"}]\n"])</script>
+  <script>self.__next_f.push([1, "e:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Solana Agent Kit registers a \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"RUGCHECK\"}],\" action beside \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"TRADE\"}],\" in the same plugin (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"plugin-token/src/index.ts:143\"}],\"). It fetches Rugcheck's summary report for a mint. Searching the whole repository, the only references are its own files, its registration and the docs. The TRADE action's schema requires the output mint to be a string of at least 32 characters (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"actions/trade.ts:57\"}],\"). The handler parses it as a public key, and the tool puts it into the quote URL (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"tools/trade.ts:47\"}],\"). \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SolanaAgentKit.use()\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"executeAction\"}],\" and all five framework adapters (Claude, LangChain, OpenAI, Vercel AI and MCP) pass the call through with no hook between them and the handler. The Claude, OpenAI and Vercel AI adapters go through \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"executeAction\"}],\", which parses the schema and calls the handler. The LangChain and MCP adapters call the handler directly (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"core/src/langchain/index.ts:20\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"adapter-mcp/src/index.ts:76\"}],\").\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "f:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"GOAT ships Rugcheck as its own plugin with five read-only tools (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"plugins/rugcheck/src/rugcheck.service.ts:8-50\"}],\"). Outside that plugin and its Python port, the word appears only in the README, the Python project file and lockfiles. GOAT's core has no hook, approval or middleware mechanism: \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"getTools\"}],\" only collects the tools. In the week to 2026-09-27 the rugcheck plugin had 11 npm downloads, against 78 for the Jupiter plugin.\"]}]\n10:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"OKX has the most developed check of the seven, and it shows the pattern most clearly. \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"classify_swap_route\"}],\" marks a route \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"block\"}],\" with the reason \\\"to-token is a honeypot\\\" when the backend's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isHoneyPot\"}],\" flag is true:\"]}]\n11:[\"$\",\"pre\",null,{\"className\":\"scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85\",\"children\":\"// okx/onchainos-skills 9de8161 · cli/src/commands/risk_classify.rs:257-265\\n    if token[\\\"isHoneyPot\\\"].as_bool().unwrap_or(false) {\\n        let (side_action, reason) = if is_buy {\\n            (SwapAction::Block, \\\"to-token is a honeypot\\\")\\n        } else {\\n            (SwapAction::Warn, \\\"from-token is a honeypot; exit allowed\\\")\\n        };\\n        action = action.stricter(side_action);\\n        reasons.push(reason.to_string());\\n    }\"}]\n"])</script>
+  <script>self.__next_f.push([1, "12:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The classifier runs on the output of \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap quote\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap swap\"}],\", and of the MCP tools \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap_quote\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap_swap\"}],\" (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap.rs:203\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"312\"}],\"; \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"mcp/mod.rs:1700\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"1733\"}],\"). There it annotates and does not reject. The skill's reference says so: \\\"exit code stays 0 — classification, not rejection\\\" (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap.md:94\"}],\"). The command that signs is \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap execute\"}],\". Neither \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"cmd_execute\"}],\" nor the batch path \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"cmd_execute_batch\"}],\" calls the classifier or reads \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isHoneyPot\"}],\". So a block verdict stops a purchase only if the model first ran a quote, read the field, and chose to stop. A separate \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"security token-scan\"}],\" command detects honeypots, high tax and mint risks, and nothing on the execute path calls it either.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "13:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"At broadcast, the backend can return risk warning 81362. Without \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"--force\"}],\", the CLI returns a result asking for confirmation. With \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"--force\"}],\", it sends \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"skipWarning: true\"}],\" (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"transfer/mod.rs:594-596\"}],\"). The skill asks the model to get the user's confirmation before adding the flag. No code checks that it did.\"]}]\n14:[\"$\",\"h2\",null,{\"id\":\"router\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"The router builds the order either way\"}]\n"])</script>
+  <script>self.__next_f.push([1, "15:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Jupiter is the router behind four of the other six paths, and its own CLI is the most direct way to put a model in front of it. \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"jup spot swap\"}],\" resolves \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"--to\"}],\" by taking the first hit of a token search (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"DatapiClient.ts:178-187\"}],\"). It then requests an Ultra order, signs it locally and posts it for execution (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"Swap.ts:49-116\"}],\"). Nothing on that path reads \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isVerified\"}],\", the organic score or the \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isSus\"}],\" flag. The CLI prints \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isVerified\"}],\" in its \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"spot tokens\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"spot portfolio\"}],\" output, not in \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"quote\"}],\" or \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap\"}],\", and its own docs and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"llms.txt\"}],\" give no trust guidance. Jupiter's separate integrating-jupiter agent skill (jup-ag/agent-skills, \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SKILL.md:240\"}],\") tells a model that the \\\"primary trust signal is top-level \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isVerified\"}],\"\\\". That is guidance, and it does not ship with the CLI.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "16:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"We asked Ultra for an order on each of the 30 most recently listed tokens, and on each token we caught carrying Jupiter's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isSus\"}],\" flag at the moment of the order:\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "17:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Tokens sampled (tokens/v2/recent, 16:58–16:59 UTC)\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Tokens sampled (tokens/v2/recent, 16:58–16:59 UTC)\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"30\"}]]}],[\"$\",\"div\",\"isVerified\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"isVerified\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"0 of 30\"}]]}],[\"$\",\"div\",\"organicScoreLabel low\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"organicScoreLabel low\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"30 of 30\"}]]}],[\"$\",\"div\",\"isSus flag present\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"isSus flag present\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"0 of 30\"}]]}],[\"$\",\"div\",\"Ultra /order returned a signable transaction\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Ultra /order returned a signable transaction\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"30 of 30\"}]]}],[\"$\",\"div\",\"Tokens flagged isSus at the moment of the order (separate scan, 16:59–17:01 UTC)\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Tokens flagged isSus at the moment of the order (separate scan, 16:59–17:01 UTC)\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"3\"}]]}],[\"$\",\"div\",\"Ultra /order returned a signable transaction for a flagged token\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Ultra /order returned a signable transaction for a flagged token\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"3 of 3\"}]]}]]}]\n"])</script>
+  <script>self.__next_f.push([1, "18:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"This is not a defect in the router. A router is a market and is not asked to judge tokens. What it means is that a check the agent skips is not caught further down. Ultra returned the same kind of order for tokens Jupiter's own token API had flagged as for those it had not. Three flagged tokens is a small sample, and it shows only that a flag did not stop an order, not how often it would.\"}]\n19:[\"$\",\"h2\",null,{\"id\":\"none\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Two paths give the model nothing to consult\"}]\n1a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Coinbase AgentKit's Jupiter action converts the output mint with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"new PublicKey()\"}],\" and passes it to the quote (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"jupiterActionProvider.ts:48\"}],\"). Its description tells the model that input and output tokens \\\"must be valid SPL token mints\\\" (line 33). The code does not check the output mint. It reads only the input mint, with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"getMint\"}],\", for its decimals (line 52), which fails unless the input is an SPL mint. AgentKit can sign through a local keypair, CDP or Privy. The latter two sign server-side under operator-configured policies that we did not evaluate.\"]}]\n1b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"ElizaOS plugin-solana 1.2.6 takes the token addresses from the conversation. The \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SWAP_SOLANA\"}],\" handler makes a separate model call over the recent messages to extract the input token, output token and amount (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"swap.ts:271-281\"}],\"). If that call returns a contract address, the handler uses it as it is. A symbol without an address is resolved only against tokens already in the wallet, so buying a new token requires its address to appear in the chat. That address is not checked.\"]}]\n1c:[\"$\",\"h2\",null,{\"id\":\"in-the-path\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Two controls the model cannot set\"}]\n"])</script>
+  <script>self.__next_f.push([1, "1d:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Phantom's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"/prepare\"}],\" is the one server step on a surveyed buy path that can refuse with a scanner verdict the model cannot override. The session builds its client as a user wallet (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"session/manager.ts:449\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"495\"}],\"), so each Solana sign-and-send first posts to \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"/prepare\"}],\" with a simulation config (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"PhantomClient.ts:320-346\"}],\"). That step can refuse with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"transaction-blocked\"}],\", carrying a scanner result, or with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"spending-limit-exceeded\"}],\", against a daily USD limit (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"client/src/types.ts:161-189\"}],\"). The model cannot skip it. The code does not show whether the scanner looks at the output token, so the table says unclear rather than none. OKX's backend also simulates every execute before signing, and no flag skips it (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"transfer/mod.rs:336\"}],\"). It aborts only when the simulation reports failure (369-380), and the risk warning 81362 that can follow at broadcast is overridden with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"--force\"}],\".\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "1e:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The model does control the rest of Phantom's path. \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"buy_token\"}],\" returns a quote unless \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"execute\"}],\" is true:\"]}]\n1f:[\"$\",\"pre\",null,{\"className\":\"scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85\",\"children\":\"// phantom/phantom-connect-sdk 618f616 · packages/cli/src/actions/buy-token.ts:291-299\\n    if (!execute) {\\n      logger.info(\\\"Returning quote only (execute: false)\\\");\\n      return { quoteRequest, quoteResponse };\\n    }\\n\\n    logger.info(`Executing ${isCrossChain ? \\\"cross-chain\\\" : \\\"\\\"} swap transaction (execute: true)`);\\n\\n    const swapResult = await executeSwap({\\n      quoteResponse,\"}]\n20:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The model sets \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"execute\"}],\", so a single call with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"execute: true\"}],\" signs and broadcasts. \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"buy_token\"}],\" never calls the separate \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"simulate_transaction\"}],\" tool. The same codebase does enforce this pattern elsewhere: \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"pay_api_access\"}],\" throws on a simulation block before signing (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"pay-api-access.ts:155-167\"}],\"). The buy path does not.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "21:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The second control is in code newer than the ElizaOS plugin surveyed above. On the elizaOS/eliza develop branch (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"d0cd039\"}],\"), Solana swaps live in \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"plugins/plugin-wallet\"}],\". Swaps the model requests through the plugin's wallet action pass a confirmation gate (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"chains/wallet-action.ts:486\"}],\") that proceeds only after the user confirms in a later turn. The gate's own comment states that \\\"the LLM cannot bypass this gate by setting request params\\\" (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"security/wallet-financial-confirmation.ts:9-13\"}],\"), and the Solana helper \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"isConfirmed\"}],\" returns false for any confirmed flag the model supplies (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"chains/solana/actions/confirmation.ts:17-20\"}],\"). The same action refuses financial writes on messages flagged as suspected prompt injection (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"chains/wallet-action.ts:409\"}],\"). The gate does not cover every route to a signature. \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SolanaService\"}],\" still exports the \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"executeSwap\"}],\" entry point that trading plugins call (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"chains/solana/service.ts:2463\"}],\"), and nothing in it calls the gate. We did not read the plugin's Raydium swap service. For requests that come through the wallet action, this is a control in the path. It is not a token check: we found none in \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"SolanaService.swap\"}],\" or \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"buildJupiterSwapTransaction\"}],\". The code ships as \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@elizaos/plugin-wallet\"}],\" (152 downloads in the week to 2026-09-27), and we did not confirm that the published versions match develop.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "22:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Of the refusals we could see in the surveyed toolkits' code, these two are the only ones that can stop a well-formed buy that would succeed on-chain, and that the model cannot override. Signing policies that operators configure for CDP, Privy, Crossmint or Lit may be others; we did not evaluate them. Neither of the two is a token check in code we can read. Phantom's step is not visible, and ElizaOS's asks a person.\"}]\n23:[\"$\",\"h2\",null,{\"id\":\"ours\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Our own package is in the path, and cannot see the token\"}]\n24:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"wormhole-x402\"}],\" ships \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"guardSigner\"}],\", a wrapper around a Solana wallet's signing methods. It lets a signature through only when \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"inspectPayment\"}],\" finds that the transaction matches an x402 payment quote, and it refuses when there is no quote. It inspects the bytes offline, with no RPC, and the wallet signs the bytes that were inspected, not the caller's object. That puts it in the position this article argues for. It was built for payments, so we ran it against real Jupiter swaps to see what it does outside that job.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "25:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"SOL → USDC, default route, 2 lookup tables\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"SOL → USDC, default route, 2 lookup tables\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"abstain → refused\"}]]}],[\"$\",\"div\",\"SOL → BONK, default route, 3 lookup tables\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"SOL → BONK, default route, 3 lookup tables\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"abstain → refused\"}]]}],[\"$\",\"div\",\"SOL → USDC, legacy, no lookup tables\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"SOL → USDC, legacy, no lookup tables\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"refuse · X402-003, X402-006, X402-007\"}]]}],[\"$\",\"div\",\"Inner wallet signTransaction reached\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Inner wallet signTransaction reached\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white sm:text-right\",\"children\":\"0 times\"}]]}]]}]\n"])</script>
+  <script>self.__next_f.push([1, "26:[\"$\",\"pre\",null,{\"className\":\"scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85\",\"children\":\"// agent-wormhole ec61fbd · x402-guard/src/index.ts:1100-1106, 1118-1119\\n    const quote = getQuote();\\n    if (!quote) {\\n      throw new Error(\\n        `x402-guard: refusing to sign via ${method}() — no payment quote was ` +\\n          \\\"supplied, so there is nothing to check this transaction against.\\\",\\n      );\\n    }\\n    // …\\n    const verdict = inspectPayment(serialized, quote, opts);\\n    if (verdict.decision !== \\\"allow\\\") {\"}]\n27:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The default routes abstain because a transaction that uses address lookup tables names accounts that are not in its own bytes, and the guard will not resolve them without RPC (\",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"index.ts:301-309\"}],\"). The legacy route is refused because it invokes Jupiter's program, which is outside the guard's program allowlist (X402-003). It also raised findings under two further rules, X402-006 and X402-007.\"]}]\n28:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"So the guard refuses a swap into USDC and a swap into anything else in the same way. It has no notion of the token and makes no judgement about it. An agent that needs to buy tokens cannot use it for that, and we do not suggest it.\"}]\n29:[\"$\",\"h2\",null,{\"id\":\"method\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Method\"}]\n2a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The code read needs no account. The live measurements used Jupiter's unauthenticated endpoints. For each toolkit we cloned the repository, recorded the commit with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"git rev-parse HEAD\"}],\", and started at the tool the model calls to buy. We read every function from there to the signature. That included the adapters that expose the tool to a model framework and the alternative wallet clients a toolkit offers. We then searched each tree for token-check and control vocabulary and traced every caller of whatever turned up back toward the buy entry point. A check that no buy path calls is recorded as offered, not enforced.\"]}]\n4a:T91b,"])</script>
+  <script>self.__next_f.push([1, "# toolkits, cloned and pinned\nsendaifun/solana-agent-kit   1254fe550872ee48d42f168fc8ca854c87ab6eff\n  packages/plugin-token/src/jupiter/actions/trade.ts     TRADE handler\n  packages/plugin-token/src/jupiter/tools/trade.ts       quote, swap, sign\n  packages/core/src/utils/keypairWallet.ts               sign + send\n  packages/core/src/{claude,langchain,openai,vercel-ai}, packages/adapter-mcp\ngoat-sdk/goat                f2eedc2f041589322c0db39d59a67757014910a0\n  typescript/packages/plugins/jupiter/src/jupiter.service.ts\n  typescript/packages/wallets/solana/src/SolanaKeypairWalletClient.ts\ncoinbase/agentkit            2e6dbaf725b9ec5f3b53003278100b0e655c214d\n  typescript/agentkit/src/action-providers/jupiter/jupiterActionProvider.ts\nphantom/phantom-connect-sdk  618f6165112f0ecd4986773698f26fdcb7dbc7ca\n  packages/cli/src/actions/buy-token.ts\n  packages/cli/src/utils/swap.ts\n  packages/client/src/PhantomClient.ts                   /prepare\nokx/onchainos-skills         9de8161d870fea8fad05c324f6c00a50cd88962d\n  cli/src/commands/swap.rs                               cmd_execute\n  cli/src/commands/risk_classify.rs                      classify_swap_route\n  cli/src/commands/agentic_wallet/transfer/mod.rs        sign_and_broadcast\njup-ag/cli                   d8d7386691535469f7d17705ebfc5f432b96feba\n  src/lib/Swap.ts\njup-ag/agent-skills          a2211e3f6a7caa03310c7a9a8d816e723b0bdc5f\n  skills/integrating-jupiter/SKILL.md\n\n# ElizaOS: github.com/elizaos-plugins/plugin-solana returns 404, so read npm\nnpm pack @elizaos/plugin-solana@1.2.6\n  gitHead  646c632924826e2b75c2304a75ee56959fe4a460\n  sha256   dfd19648ecafc789bbd4c23fa5456b8927615aedc152c95993afc34dd03e7bc1\n  source   dist/index.js.map -\u003e sourcesContent -\u003e src/actions/swap.ts, src/service.ts\nelizaOS/eliza (develop)      d0cd0399e71046278452c5db0c3d9997a0f558d6\n  plugins/plugin-wallet/src/chains/wallet-action.ts\n  plugins/plugin-wallet/src/security/wallet-financial-confirmation.ts\n  plugins/plugin-wallet/src/chains/solana/\n\n# ours\nrunningoffcode/agent-wormhole  ec61fbdf8e29679e4651f10a7ec6e4cdd4a7d610\n  x402-guard/src/index.ts      guardSigner, inspectPayment   (wormhole-x402@0.9.9)\n\n# in each tree, then trace every caller back toward the buy entry point\ngrep -rniE 'rugcheck|honeypot|isverified|issus|confirm|approve|simulate|skippreflight|policy'"])</script>
+  <script>self.__next_f.push([1, "2b:[\"$\",\"pre\",null,{\"className\":\"scroll-x liquid-glass mt-6 whitespace-pre rounded-[1rem] px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-white/85\",\"children\":\"$4a\"}]\n2c:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"We also read the JavaScript of \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@okx-dex/okx-dex-sdk\"}],\" 1.0.13 and 1.0.18 for Solana Agent Kit's OKX path. In \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@jup-ag/api\"}],\" we read the base path and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"createJupiterApiClient\"}],\" in 6.0.31, 6.0.39, 6.0.40, 6.0.44 and 6.0.48. We also read \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"sendEncodedTransaction\"}],\" in \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"@solana/web3.js\"}],\" 1.98.4 to confirm the preflight default.\"]}]\n2d:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Live measurements were all taken on 2026-09-28 between 16:58 and 17:06 UTC, from one machine, and all were read-only. Raw output was saved for each. DNS: \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"quote-api.jup.ag\"}],\" returned no A record (NOERROR with no answer from 8.8.8.8 and 1.1.1.1; the local resolver returned NXDOMAIN, and its status has varied between runs), and curl exited with code 6. Default slippage: a SOL to USDC quote with no slippage parameter returned \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"slippageBps\"}],\" 50 on both \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"api.jup.ag/swap/v1\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"lite-api.jup.ag/swap/v1\"}],\".\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "2e:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Router: we took the 30 most recent tokens from \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"lite-api.jup.ag/tokens/v2/recent\"}],\" and sent each to \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"lite-api.jup.ag/ultra/v1/order\"}],\", the endpoint the Jupiter CLI calls, with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"inputMint\"}],\" SOL, \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"amount\"}],\" 10,000,000 lamports (0.01 SOL), and a \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"taker\"}],\" address that holds at least that much SOL. Ultra returns no transaction for an unfunded taker: a freshly generated taker got \\\"Insufficient funds\\\" and an empty transaction, and no taker got null. For flagged tokens we read \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"recent\"}],\", \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"toptrending/1h\"}],\" and \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"toptraded/1h\"}],\" repeatedly, requested an order with the same parameters for each token that carried \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"audit.isSus\"}],\", and read the flag from token search within about a second of the order. The orders were built and never signed.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "2f:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Our guard: we ran \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"guardSigner\"}],\" from a fresh build of the commit above, which is byte-identical to the shipped \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"dist/index.js\"}],\". It wrapped a wallet that counts signing calls and was given real Jupiter swap transactions built on \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"lite-api.jup.ag/swap/v1\"}],\" for 1,000,000 lamports (0.001 SOL). The default routes were SOL to USDC and SOL to BONK, quoted with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"slippageBps\"}],\" 50. The legacy SOL to USDC with no lookup tables was quoted with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"onlyDirectRoutes=true\u0026asLegacyTransaction=true\"}],\" and built with \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"asLegacyTransaction: true\"}],\" in the \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"/swap\"}],\" body. Setting \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"asLegacyTransaction\"}],\" on the quote alone still returned a versioned transaction with one lookup table.\"]}]\n"])</script>
+  <script>self.__next_f.push([1, "30:[\"$\",\"h2\",null,{\"id\":\"limits\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Limits\"}]\n31:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"A code read is not a runtime test.\"}],\" We did not run any toolkit's buy path with funds. When we say what a path does, we mean what its code does at the stated commit. A configuration, wrapper or framework we did not read could add a check.\"]}]\n32:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Server-side steps are not visible.\"}],\" Several steps run where we cannot read them: Phantom's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"/prepare\"}],\" scanner and its spending-limit value, OKX's pre-transaction simulation and warning 81362, Jupiter Ultra's order and execute endpoints, the CDP and Privy signing policies AgentKit can use, and the Crossmint and Lit wallets GOAT can use. Where a cell says unclear, that is what it means.\"]}]\n33:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Toolkits change.\"}],\" Solana Agent Kit was last pushed on 2026-05-14 and GOAT on 2026-07-02. OKX was pushed on the day we read it. We read the ElizaOS plugin from its npm source map at 1.2.6, because its GitHub repository returns 404. That plugin already has a successor with different controls, which we read but did not fully trace. Its Raydium swap service is among what we did not read.\"]}]\n34:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Some paths were read less fully than others.\"}],\" We checked Solana Agent Kit's \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"OKX_EXECUTE_SWAP\"}],\" path only by searching the OKX SDK's JavaScript, because running it needs OKX API keys. The ElizaOS service path gets its quote and swap from an external \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[12.5px] text-white/90\",\"children\":\"JUPITER_SERVICE\"}],\" that we did not examine, so whether that path reaches a signature today is unknown. We did not trace Solana Agent Kit's Mayan, Drift, Sanctum or limit-order actions. We read only AgentKit's TypeScript package, and only GOAT Python's Jupiter service, which has the same shape as the TypeScript one. We read the web3.js preflight default in 1.98.4, while Solana Agent Kit's lockfile resolves 1.98.2.\"]}]\n35:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"The measurements come from one machine in one eight-minute window.\"}],\" DNS results, lookup-table counts and token flags vary with time and route. An earlier run the same day saw one lookup table on the SOL to USDC route, and the run reported here saw two. The flagged-token result rests on three tokens, and the flag is not stable: a fourth token was flagged in a list and unflagged in search fourteen seconds later, so we left it out, and a fifth, seen flagged in a list, was not ordered.\"]}]\n36:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"If we have misread a path, or missed a check that exists, send the file and line through agentwormhole.com/contact. We will correct this page and say that we did.\"}]\n37:[\"$\",\"h2\",null,{\"id\":\"why\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Why th"])</script>
+  <script>self.__next_f.push([1, "e position matters more than the check\"}]\n38:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"The token checks in this survey are real and do useful work. Rugcheck summarises a mint, OKX's backend flags honeypots, and Jupiter labels verified and suspicious tokens. This survey is not about how good they are. It is about where they sit.\"}]\n39:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"In every path we read, the open code judges the token only if the model decides it should. That works while the model is right. The purchases a check exists to stop are the ones where it is not: a user has argued it into a trade, a token description was written to persuade it, or a symbol names more than one token. In each case the model has been given a reason to believe this token is the right one, and a model that believes that has no reason to call a tool that might disagree.\"}]\n3a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Moving the check into the signing path means more than calling the same tool from a different place. The signer has to know which token the transaction buys. On the default routes we built, the accounts that answer that question sat behind two or three address lookup tables, which is why our own guard abstains. A token check in the signing path has to resolve those tables, or verify the transaction against a quote it trusts, and then judge the token. We have not built that, and this article does not announce that we have.\"}]\n3b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Any agent that can buy can be tested simply. Take the token check out of its tool list and ask it to buy. If the purchase still goes through, the check was advice.\"}]\n3c:[\"$\",\"h2\",null,{\"id\":\"sources\",\"className\":\"mt-20 scroll-mt-8 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Sources\"}]\n"])</script>
+  <script>self.__next_f.push([1, "3d:[\"$\",\"div\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/55\",\"children\":[\"$\",\"ul\",null,{\"className\":\"grid gap-2\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/sendaifun/solana-agent-kit/tree/1254fe550872ee48d42f168fc8ca854c87ab6eff\",\"children\":\"Solana Agent Kit at 1254fe5\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/goat-sdk/goat/tree/f2eedc2f041589322c0db39d59a67757014910a0\",\"children\":\"GOAT SDK at f2eedc2\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://www.npmjs.com/package/@elizaos/plugin-solana/v/1.2.6\",\"children\":\"@elizaos/plugin-solana 1.2.6 on npm\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/elizaOS/eliza/tree/d0cd0399e71046278452c5db0c3d9997a0f558d6/plugins/plugin-wallet/src\",\"children\":\"elizaOS/eliza develop at d0cd039: plugin-wallet\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/coinbase/agentkit/tree/2e6dbaf725b9ec5f3b53003278100b0e655c214d\",\"children\":\"Coinbase AgentKit at 2e6dbaf\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/phantom/phantom-connect-sdk/tree/618f6165112f0ecd4986773698f26fdcb7dbc7ca\",\"children\":\"Phantom Connect SDK (MCP server, CLI, client) at 618f616\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://docs.phantom.com/phantom-mcp-server/tools\",\"children\":\"Phantom MCP server tools documentation\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/okx/onchainos-skills/tree/9de8161d870fea8fad05c324f6c00a50cd88962d\",\"children\":\"OKX Onchain OS skills at 9de8161\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/jup-ag/cli/tree/d8d7386691535469f7d17705ebfc5f432b96feba\",\"children\":\"Jupiter CLI at d8d7386\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/jup-ag/agent-skills/tree/a2211e3f6a7caa03310c7a9a8d816e723b0bdc5f\",\"children\":\"Jupiter agent-skills at a2211e3\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://github.com/runningoffcode/agent-wormhole/tree/ec61fbdf8e29679e4651f10a7ec6e4cdd4a7d610/x402-guard\",\"children\":\"Agent Wormhole x402-guard at ec61fbd\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"className\":\"text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white\",\"href\":\"https://www.npmjs.com/package/wormhole-x402\",\"children\":\"wormhole-x402 on npm\"}]}]]}]}]\n"])</script>
+  <script>self.__next_f.push([1, "3e:[\"$\",\"p\",null,{\"className\":\"mt-16 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/50\",\"children\":\"Code read at the commits stated, on 2026-09-28. Live measurements were read-only and taken from one machine between 16:58 and 17:06 UTC on 2026-09-28; nothing was signed and nothing was broadcast. npm download counts are for 2026-09-21 to 2026-09-27. Negative findings mean “not found with substantial effort”, never “proven absent”. Corrections: agentwormhole.com/contact.\"}]\n3f:[\"$\",\"$L4b\",null,{\"children\":[\"$\",\"$4c\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@4d\"}]}]\n4e:[]\n40:\"$W4e\"\n41:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L4f\",null,{\"children\":\"$L50\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L51\",null,{\"children\":[\"$\",\"$4c\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L52\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n43:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script>
+  <script>self.__next_f.push([1, "44:[\"$\",\"tr\",\"2\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"ElizaOS plugin-solana 1.2.6 · npm gitHead 646c632\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None found\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None; RPC preflight after signing\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Dynamic; service path starts at 200 bps, sell retries reach 3,200\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Keypair match; SOL balance on the service path. No spend cap, no confirmation\"}]]}]\n45:[\"$\",\"tr\",\"3\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"Coinbase AgentKit (TS) · 2e6dbaf\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None found\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None; RPC preflight after signing (keypair, CDP); Privy not visible\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"50 bps\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Solana mainnet only. No spend cap, no confirmation in toolkit code\"}]]}]\n46:[\"$\",\"tr\",\"4\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"Phantom MCP 1.2.8 · 618f616\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Unclear: none client-side; server step not visible\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Unclear: simulate_transaction returns security warnings, contents not visible; buy_token never calls it\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Server-side /prepare; the model cannot skip it; contents not visible\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Auto, computed server-side\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"execute defaults to false (the model sets it); server daily USD limit\"}]]}]\n47:[\"$\",\"tr\",\"5\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"OKX Onchain OS · 9de8161\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None on swap execute\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Honeypot classifier on quote output; security token-scan\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Backend, before signing; aborts if the simulation reports failure\"}],[\"$\",\"td\",\"4\",{\""])</script>
+  <script>self.__next_f.push([1, "className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Auto, with slippagePercent 0.5\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Backend warning 81362 at broadcast, bypassed with --force\"}]]}]\n48:[\"$\",\"tr\",\"6\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"Jupiter CLI · d8d7386\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"No check tool: spot tokens displays the isVerified label; a separate Jupiter skill tells the model to read it\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None client-side; --dry-run available\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Jupiter real-time estimate\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"Amount and slippage validation\"}]]}]\n49:[\"$\",\"tr\",\"7\",{\"className\":\"border-b border-white/[0.06] last:border-0\",\"children\":[[\"$\",\"td\",\"0\",{\"className\":\"px-4 py-3 align-top font-mono text-[12.5px] font-medium text-white\",\"children\":\"Agent Wormhole wormhole-x402 0.9.9 · ec61fbd\"}],[\"$\",\"td\",\"1\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None: a payment guard, not a token check\"}],[\"$\",\"td\",\"2\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"n/a\"}],[\"$\",\"td\",\"3\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"None; offline byte inspection\"}],[\"$\",\"td\",\"4\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"n/a\"}],[\"$\",\"td\",\"5\",{\"className\":\"px-4 py-3 align-top font-body text-[12.5px] font-light leading-relaxed text-white/75\",\"children\":\"In the signing path; refused 3 of 3 swaps, 0 inner signs\"}]]}]\n"])</script>
+  <script>self.__next_f.push([1, "50:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, maximum-scale=5\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"#000000\"}]]\n"])</script>
+  <script>self.__next_f.push([1, "53:I[27201,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"IconMark\"]\n4d:null\n"])</script>
+  <script>self.__next_f.push([1, "52:[[\"$\",\"title\",\"0\",{\"children\":\"7 agent toolkits give a model a buy tool. In their open code, none checks the token on the way to the signature. · Agent Wormhole\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"We traced the buy path from tool call to signature in Solana Agent Kit, GOAT, the ElizaOS Solana plugin, Coinbase AgentKit, Phantom's MCP server, OKX Onchain OS and the Jupiter CLI. In the open code of all seven, nothing on that path checks the token being bought. Three offer a check as a separate tool the model may choose not to call. The article gives commits, files and a method you can repeat.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"application-name\",\"content\":\"Agent Wormhole\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"AI agent security,agentic commerce security,prompt injection,x402 security,quote conformance,agentic trading guard,Robinhood MCP security,MCP security,agent payment verification,prompt worm\"}],[\"$\",\"meta\",\"4\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"link\",\"5\",{\"rel\":\"canonical\",\"href\":\"https://agentwormhole.com/research/advice-is-not-a-control\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"7 toolkits give a model a buy tool. In open code, none checks the token before the signature.\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"Three agent toolkits ship a token check as a separate tool. The model decides whether to call it, and the buy path never asks. Every path is pinned to a commit, and the method is included.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image\",\"content\":\"https://agentwormhole.com/research/advice-is-not-a-control/opengraph-image.png?opengraph-image.22x-zr3lg_i56.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:alt\",\"content\":\"Advice is not a control — in seven agent toolkits, no open-code token check sits between the model and the signature\\n\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"14\",{\"property\":\"article:published_time\",\"content\":\"2026-09-28\"}],[\"$\",\"meta\",\"15\",{\"property\":\"article:author\",\"content\":\"Agent Wormhole\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:title\",\"content\":\"7 toolkits give a model a buy tool. In open code, none checks the token before the signature.\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:description\",\"content\":\"Three of seven toolkits offer a token check as a tool the model may skip. A check the model can decline is advice, not a control.\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:image\",\"content\":\"https://agentwormhole.com/research/advice-is-not-a-control/opengraph-image.png?opengraph-image.22x-zr3lg_i56.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image:alt\",\"content\":\"Advice is not a control — in seven agent toolkits, no open-code token check sits between the model and the signature\\n\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"link\",\"24\",{\"rel\":\"icon\",\"href\":\"/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"any\",\"type\":\"image/svg+xml\"}],[\"$\",\"link\",\"25\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"180x180\",\"type\":\"image/png\"}],[\"$\",\"$L53\",\"26\",{}]]\n"])</script>
+</body>
+
+</html>

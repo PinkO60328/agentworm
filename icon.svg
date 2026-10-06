@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Favicon: the glass-badge brand look reduced to what survives at 16px.
+       The full mark's five rings merge into a blob that size, so this keeps
+       three elements at wider spacing and heavier strokes — outer ring, inner
+       ring, throat, still pulled off-axis — in white on the dark disc.
+       Verified by rendering at 16/32/48 and looking at the result rather than
+       trusting the source. -->
+  <circle cx="32" cy="32" r="32" fill="#0d0f14"/>
+  <circle cx="32" cy="32" r="31.4" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.2"/>
+  <g fill="none" stroke="#ffffff">
+    <circle cx="31" cy="31" r="26" stroke-width="4.5"/>
+    <circle cx="35.5" cy="35.5" r="14.5" stroke-width="4"/>
+    <circle cx="40.5" cy="40.5" r="4.5" fill="#ffffff" stroke="none"/>
+  </g>
+</svg>

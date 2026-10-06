@@ -1,0 +1,11 @@
+{"burned":37654910.429632,"burned_pct":3.7654910429632005,"spent_usd":null,"source":"live","spent_assets":[],"unpriced":[],"as_of":"2026-10-06T13:37:05.164Z","note":"Burned
+is read from the WORM contract: supply destroyed plus the balance at 0xdEaD. Spend is whatever left the buyback wallet
+in transactions where WORM came back — the paying asset is not assumed, so a purchase made with ETH, USDG or anything
+else is counted the same way. A non-empty `unpriced` means spent_usd omits those assets and is therefore a floor.
+PRICING: spend is a COST, so an asset with a recorded cost basis is valued at what it cost while the buys were made, not
+at today's market — `spent_assets[].priced_at` says which was used for each. Valuing at today's market was previously a
+documented limitation and it misreported badly: PLTR fell from about $168 to under a cent, so purchases costing roughly
+$14,400 re-priced to $0.62 while nothing on chain had changed. An asset with no basis on file still falls back to its
+deepest pool. `source` says whether response is a live read or the last one that succeeded — the upstream RPC
+rate-limits, and a remembered figure is truer than a null. Any field may still be null if no read has ever succeeded on
+this instance."}

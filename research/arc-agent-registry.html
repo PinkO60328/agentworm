@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html data-dpl-id="dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" lang="en"
+    class="instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased">
+
+<head>
+    <script src="../nav-fix.js"></script>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <link rel="preload"
+        href="/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="stylesheet" href="/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low"
+        href="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+    <script src="/_next/static/chunks/453pof2vctwbe.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/3psrapv-whp7s.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/1upe53-127sm4.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/turbopack-3cgtxutfl_k-9.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        async=""></script>
+    <script src="/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <meta name="next-size-adjust" content="" />
+    <meta name="theme-color" content="#000000" />
+    <title>Building the payment guard for Arc: what we shipped, and what we are building next · Agent Wormhole</title>
+    <meta name="description"
+        content="Arc puts agent identity, job escrow and USDC settlement on one chain. We shipped quote-conformance verification and a task-bound signer for both Arc Testnet and mainnet, verified against the deployed contracts. Here is how it works, what we measured, and what comes next." />
+    <meta name="application-name" content="Agent Wormhole" />
+    <meta name="keywords"
+        content="AI agent security,agentic commerce security,prompt injection,x402 security,quote conformance,agentic trading guard,Robinhood MCP security,MCP security,agent payment verification,prompt worm" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://agentwormhole.com/research/arc-agent-registry" />
+    <meta property="og:title" content="Building the payment guard for Arc" />
+    <meta property="og:description"
+        content="A task-bound signer the model cannot bypass, verified on Arc Testnet and mainnet. What we shipped, what we measured, and what we are building next." />
+    <meta property="og:image"
+        content="https://agentwormhole.com/research/arc-agent-registry/opengraph-image?e01f86cf5fb6470c" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"
+        content="Building the payment guard for Arc — a task-bound signer verified against the deployed contracts on Arc Testnet and mainnet. Agent Wormhole engineering." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-09-16" />
+    <meta property="article:author" content="Agent Wormhole" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building the payment guard for Arc" />
+    <meta name="twitter:description"
+        content="Quote conformance and a task-bound signer, verified against the deployed contracts on both Arc networks." />
+    <meta name="twitter:image"
+        content="https://agentwormhole.com/research/arc-agent-registry/opengraph-image?e01f86cf5fb6470c" />
+    <meta name="twitter:image:alt"
+        content="Building the payment guard for Arc — a task-bound signer verified against the deployed contracts on Arc Testnet and mainnet. Agent Wormhole engineering." />
+    <meta name="twitter:image:type" content="image/png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <link rel="icon" href="/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" sizes="any"
+        type="image/svg+xml" />
+    <link rel="apple-touch-icon"
+        href="/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" sizes="180x180"
+        type="image/png" />
+    <script src="/_next/static/chunks/0cz1d0mv5g_q7.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" noModule=""></script>
+</head>
+
+<body class="flex min-h-full flex-col">
+    <div hidden=""><!--$--><!--/$--></div>
+    <main class="relative bg-black">
+        <div class="mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24"><a href="https://agentwormhole.com"
+                class="font-body text-sm text-white/60 hover:text-white">← agentwormhole.com</a>
+            <p class="mb-6 mt-10 font-body text-sm text-white/80">// Engineering · 2026-09-16</p>
+            <h1 class="font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl">Building the
+                payment guard for Arc.</h1>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Arc
+                is Circle’s chain where USDC is the gas token. It puts three things in one place that have never been in
+                one place before: agent identity through ERC-8004, job escrow through ERC-8183, and settlement in the
+                same asset an agent spends. An agent can be registered, hired, paid on delivery and rated, and the money
+                never leaves USDC.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">That
+                combination is the reason we built for it. It is also the reason the money boundary needs an enforcement
+                layer rather than another content scanner: when identity, instructions and settlement meet, the text an
+                agent reads is one step away from the payment it signs.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">This
+                is what we shipped, how we verified it, and what we are building next.</p>
+            <h2 id="verified" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">
+                Verification before support</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Our
+                payment guard checks that an x402 payment matches the quote it was offered against — offline, with no
+                RPC. To recover the signer of an EIP-3009 authorization it needs the exact EIP-712 domain, and a guessed
+                domain does not fail loudly. It recovers the<!-- --> <em>wrong signer</em> and returns a confident wrong
+                answer.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">So we
+                do not take domains from documentation. For both Arc networks we read<!-- --> <code
+                    class="font-mono text-[13px] text-white/90">DOMAIN_SEPARATOR()</code> <!-- -->off the deployed
+                contract and confirmed it reproduces from the name and version we were about to ship. For mainnet we did
+                it across four independent RPC providers so the entry does not rest on one endpoint’s word.</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Arc Testnet chain id</span><code
+                        class="font-mono text-[13px] font-medium text-white">5042002</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Arc mainnet chain id, confirmed on four
+                        providers</span><code class="font-mono text-[13px] font-medium text-white">5042</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">USDC name / version / ERC-20
+                        decimals</span><code class="font-mono text-[13px] font-medium text-white">USDC · 2 · 6</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">DOMAIN_SEPARATOR reproduces from those
+                        values</span><code class="font-mono text-[13px] font-medium text-white">both networks</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">EIP-3009 dispatch confirmed</span><code
+                        class="font-mono text-[13px] font-medium text-white">yes</code></div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">We
+                also sent a deliberately malformed authorization and watched it revert<!-- --> <code
+                    class="font-mono text-[13px] text-white/90">FiatTokenV2: invalid signature</code>, which proves the
+                EIP-3009 path is really there rather than merely documented. A test pins each separator, so a drift in
+                name or version cannot silently start recovering the wrong signer.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">One
+                Arc-specific detail worth stating for anyone integrating: the native USDC balance has 18 decimals and
+                the ERC-20 interface has 6, over the same underlying balance. Quotes are in ERC-20 base units. Mixing
+                the two is an easy way to be off by a factor of a trillion.</p>
+            <h2 id="tasks" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">The
+                boundary: a task the model cannot widen</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">A
+                content scanner can be evaded. That is not a reason to skip it — it is a reason not to make it the only
+                thing standing between an agent and a wallet. So the enforcement lives somewhere the model cannot reach.
+            </p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">An
+                operator approves a <strong class="font-medium text-white">task</strong> <!-- -->in the console: one
+                approved recipient, a total budget, a per-payment cap, a gas cap, an expiry, optionally one private
+                endpoint, and the API key that may use it. The agent holds that key and can only<!-- --> <em>ask</em>.
+                The key that can <em>pay</em> never leaves the server.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">So
+                the worst a fooled model can do is make a request that gets refused with a code. There is no key in its
+                context to hand over.</p>
+            <pre
+                class="liquid-glass mt-6 max-w-[72ch] overflow-x-auto rounded-[1.25rem] px-6 py-5 font-mono text-[12px] leading-relaxed text-white/80">ARC-000  account kill switch engaged
+ARC-001  task revoked, expired, or not bound to this key
+ARC-002  recipient is not the task&#x27;s approved recipient
+ARC-003  per-payment cap exceeded
+ARC-004  task budget exceeded
+ARC-005  estimated gas exceeds the task&#x27;s gas cap
+ARC-006  request id reused for a different request
+ARC-007  quote is not on Arc / not Arc USDC
+ARC-008  job check failed (client, provider, evaluator, hook, status)
+ARC-009  deliverable does not match the on-chain hash
+ARC-010  signer or chain unavailable — abstain, never a partial allow</pre>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">One
+                ordering detail matters more than it looks. The signed bytes, the nonce and the budget reservation
+                commit in a single tenant-locked transaction<!-- --> <strong
+                    class="font-medium text-white">before</strong> the transaction is broadcast. A crash between commit
+                and send leaves a row the reconciler re-broadcasts, not a second payment. Refusals are stored too —
+                returned from the transaction rather than thrown through it, because a throw would roll back the very
+                row that tells the operator what their agent asked for.</p>
+            <h2 id="run" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What the live
+                run showed</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">We
+                ran all of it against Arc Testnet with a funded signer and real USDC. The case worth naming is the
+                poisoned quote: an attacker’s payee, wrapped in text instructing the model to send payment there and not
+                mention the charge.</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Poisoned quote (attacker payee + injected
+                        text)</span><code class="font-mono text-[13px] font-medium text-white">refused ARC-002</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Scanner codes raised on the same quote,
+                        independently</span><code
+                        class="font-mono text-[13px] font-medium text-white">X402-202 · X402-209</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Legitimate payment, verified against its
+                        Transfer log</span><code class="font-mono text-[13px] font-medium text-white">confirmed</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Replayed request id</span><code
+                        class="font-mono text-[13px] font-medium text-white">same transaction, no second payment</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Budget ceiling</span><code
+                        class="font-mono text-[13px] font-medium text-white">refused ARC-004 at 1.75 of 2.00 USDC</code>
+                </div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">ERC-8183 job funded, then released on
+                        deliverable hash</span><code
+                        class="font-mono text-[13px] font-medium text-white">Completed</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Release against content the provider
+                        never submitted</span><code
+                        class="font-mono text-[13px] font-medium text-white">refused ARC-009</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Signer nonce after the run</span><code
+                        class="font-mono text-[13px] font-medium text-white">4 — the refusals signed nothing</code>
+                </div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                content scanner flagged the injection.<!-- --> <em>Independently</em>, the signer refused because the
+                payee was not on the task. Nothing was signed. That is the architecture in one result: two boundaries,
+                either of which holds alone.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Afterwards everything reconciled — the merchant held exactly what was sent, the signer’s nonce equalled
+                the number of real transactions, and the task ledger matched the chain. The refusals are rows, not
+                transactions.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Two
+                defects surfaced only because the run was live, and both are fixed. Our SSRF guard answered Node’s DNS
+                lookup in the wrong shape and so could never open a socket — it failed <em>closed</em>, so it was safe,
+                and every unit test passed because those tests only asked which addresses the classifier rejects. And
+                ERC-8004 documents resolved through a single IPFS gateway, which is one outage away from “scanning
+                unavailable”. Neither would have appeared without spending real testnet USDC.</p>
+            <h2 id="registry" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What we
+                learned from the registry</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Building the agent-scanning half meant reading the ERC-8004 registry at scale, and what we found shaped
+                what we plan to build next.</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Registered agent identities on
+                        testnet</span><code class="font-mono text-[13px] font-medium text-white">895,230</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Random sample read, second
+                        pass</span><code
+                        class="font-mono text-[13px] font-medium text-white">150 / 150  (0 errors)</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Records published as inline data:
+                        JSON</span><code class="font-mono text-[13px] font-medium text-white">139  (92.7%)</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Sampled agents declaring a service
+                        endpoint</span><code class="font-mono text-[13px] font-medium text-white">1</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Identity registry is a transferable
+                        ERC-721</span><code class="font-mono text-[13px] font-medium text-white">yes</code></div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Nearly 900,000 identities exist on testnet. In a random sample of 150, read without a single error, one
+                declared a service endpoint. The typical record is a well-formed NFT profile — a name, an image, and
+                trait badges like<!-- --> <code
+                    class="font-mono text-[13px] text-white/90">&quot;Role&quot;: &quot;DEX Trader&quot;</code>
+                <!-- -->— with no endpoint, price or callable schema.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">There
+                is a straightforward reason, and it is a tooling story rather than a criticism. ERC-8004
+                identities<!-- --> <em>are</em> ERC-721 tokens, so every library that already exists emits OpenSea-style
+                collectible metadata by default. The standard permits a document an agent could act on; the path of
+                least resistance produces a profile card. On a testnet where registration is nearly free, that is
+                exactly what you would expect to accumulate.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Two
+                structural facts follow from the same ERC-721 inheritance. Identities are transferable, so whatever
+                reputation an identity earns attaches to the token rather than the operator who earned it. And the
+                registries are upgradeable proxies, so the meaning of a record can change without any address an
+                integrator pinned changing.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">None
+                of that is unusual for infrastructure in its first weeks. It is the cheapest possible moment to build
+                the checks, which is the point.</p>
+            <h2 id="mainnet" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Mainnet,
+                and what we deliberately did not carry over</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Arc
+                mainnet opened on September 16. We added support the same day — but because we read the deployed
+                contract, not because the date arrived. The USDC domain verifies across four providers, so payment
+                conformance works on mainnet today.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                registries are the part we did <em>not</em> carry over. ERC-8004 and ERC-8183 are not deployed at their
+                testnet addresses on mainnet, so those fields are null there and our agent-scan and job-settlement
+                endpoints refuse with a message naming exactly what to configure.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Reusing a familiar address on a chain that has not deployed it would point the guard at whatever happens
+                to occupy it, and the failure would present as success. The nullability lives in the type system rather
+                than in a comment, so every call site had to pass a check the compiler enforces.</p>
+            <h2 id="pricing" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What it
+                costs, and when we charge</h2>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Authorized payment</span><code
+                        class="font-mono text-[13px] font-medium text-white">$0.01</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">ERC-8183 job fund / release</span><code
+                        class="font-mono text-[13px] font-medium text-white">$0.02</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Private delivery performed</span><code
+                        class="font-mono text-[13px] font-medium text-white">$0.005</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Agent registration scan</span><code
+                        class="font-mono text-[13px] font-medium text-white">$0.01</code></div>
+                <div class="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5"><span
+                        class="font-body text-[13px] font-light text-white/70">Status, task listing, record sealing,
+                        verification</span><code class="font-mono text-[13px] font-medium text-white">free</code></div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Two
+                of those rules are commitments rather than implementation details, so they are tested rather than
+                described.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">We charge when we sign, never for refusing.</strong> <!-- -->If a
+                refusal earned revenue, the incentive would point the wrong way, and an operator could not tell whether
+                a refusal was about their policy or our margin.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">A retry is not billed twice.</strong> <!-- -->The charge is keyed
+                on the execution’s own request hash, so an identical request reuses the ledger key and is absorbed — the
+                same property that stops a retry from signing a second transaction. The 402 also arrives before any
+                chain work, so short credit never leaves a half-signed transaction behind.</p>
+            <h2 id="next" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What we are
+                building next</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                registry measurements point at one thing more than any other. Reputation is what would let one agent
+                tell a good counterparty from a bad one, and across three mainnets a published study of 173,441 agents
+                found that 98.7–100% of feedback records carry no proof of payment, with the median cost of moving a
+                score between $0.0027 and $0.055.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">Reputation bound to settlement receipts.</strong> <!-- -->We
+                already issue a signed receipt that binds a payment to a task, a recipient, an amount and a confirmed
+                transaction. Binding a feedback record to one of those receipts makes a rating cost whatever the job
+                cost, and makes Sybil raters pay each other real money to manufacture standing. This is downstream of
+                the payment guard rather than a new foundation, which is why it is rarely built first — you need the
+                receipts before you can require them.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">Identity provenance.</strong> <!-- -->Transferable identities
+                mean history can change hands. Ownership transfer is an on-chain event; we want to surface it at the
+                moment of decision, so “this agent changed owner last week and kept its history” is visible before you
+                hire it.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">Registry and implementation attestation.</strong> <!-- -->Which
+                registry is canonical, and has the implementation behind it changed? Both are checkable on chain, and a
+                signed attestation is cheap to publish and free to verify.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                <strong class="font-medium text-white">Mainnet agent coverage, the moment it is real.</strong>
+                <!-- -->When the ERC-8004 and ERC-8183 contracts land on mainnet we will read them the same way we read
+                USDC — from the deployed contract, across multiple providers — and turn the scans on then.</p>
+            <h2 id="limits" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Limits
+            </h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Testnet registration is close to free, so the 895,230 figure mixes real deployment with airdrop
+                positioning and we cannot separate the two. Our samples are 150–200 agents against roughly 895,000, so
+                the proportions carry a few points of sampling error. The cross-chain reputation figures are cited from
+                the published study and were not re-derived by us. Everything here is a snapshot of an ecosystem in its
+                first weeks, and we expect the numbers to move.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">One
+                method note worth repeating because it changed the result: our first sample was rate-limited by the
+                public RPC at 59 of 240 and reported materially different proportions. A truncated sample is a biased
+                sample, so it was discarded rather than published. The reported samples completed 188/200 and 150/150
+                across four independent providers with paced requests.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Our
+                private gateway is offchain and every receipt says so. Arc’s confidential execution is documented as on
+                the roadmap, so nothing we issue claims a transfer on Arc hides a counterparty or an amount.</p>
+            <p class="mt-16 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/50">Measurements taken
+                2026-09-16 against Arc Testnet (5042002) and Arc mainnet (5042). Registry size by binary search
+                on<!-- --> <code class="font-mono">ownerOf</code>; composition by two independent pseudo-random samples
+                over the full id range; activity by<!-- --> <code class="font-mono">eth_getLogs</code> over 40,000
+                recent blocks. The payment guard is<!-- --> <code class="font-mono">wormhole-x402</code> on npm; the
+                hosted layer is documented at<!-- --> <code class="font-mono">/llms.txt</code> and<!-- --> <code
+                    class="font-mono">/api/openapi.json</code>. Negative findings mean “not found with substantial
+                effort”, never “proven absent”.</p>
+        </div>
+    </main><!--$--><!--/$-->
+    <script src="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" id="_R_" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0])</script>
+    <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n35:I[68027,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\",1]\n:HL[\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"style\"]\n:HL[\"/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n"])</script>
+    <script>self.__next_f.push([1, "0:{\"P\":null,\"c\":[\"\",\"research\",\"arc-agent-registry\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"research\",{\"children\":[\"arc-agent-registry\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased\",\"children\":[\"$\",\"body\",null,{\"className\":\"flex min-h-full flex-col\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"relative bg-black\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://agentwormhole.com\",\"className\":\"font-body text-sm text-white/60 hover:text-white\",\"children\":\"← agentwormhole.com\"}],[\"$\",\"p\",null,{\"className\":\"mb-6 mt-10 font-body text-sm text-white/80\",\"children\":\"// Engineering · 2026-09-16\"}],[\"$\",\"h1\",null,{\"className\":\"font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl\",\"children\":\"Building the payment guard for Arc.\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Arc is Circle’s chain where USDC is the gas token. It puts three things in one place that have never been in one place before: agent identity through ERC-8004, job escrow through ERC-8183, and settlement in the same asset an agent spends. An agent can be registered, hired, paid on delivery and rated, and the money never leaves USDC.\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"That combination is the reason we built for it. It is also the reason the money boundary needs an enforcement layer rather than another content scanner: when identity, instructions and settlement meet, the text an agent reads is one step away from the payment it signs.\"}],\"$L4\",\"$L5\",\"$L6\",\"$L7\",\"$L8\",\"$L9\",\"$La\",\"$Lb\",\"$Lc\",\"$Ld\",\"$Le\",\"$Lf\",\"$L10\",\"$L11\",\"$L12\",\"$L13\",\"$L14\",\"$L15\",\"$L16\",\"$L17\",\"$L18\",\"$L19\",\"$L1a\",\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\",\"$L1f\",\"$L20\",\"$L21\",\"$L22\",\"$L23\",\"$L24\",\"$L25\",\"$L26\",\"$L27\",\"$L28\",\"$L29\",\"$L2a\",\"$L2b\",\"$L2c\",\"$L2d\",\"$L2e\",\"$L2f\",\"$L30\",\"$L31\"]}]}],null,\"$L32\"]}],{},null,false,null]},null,false,\"$@33\"]},null,false,\"$@33\"]},null,false,null],\"$L34\",false]],\"m\":\"$undefined\",\"G\":[\"$35\",[\"$L36\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\"}\n"])</script>
+    <script>self.__next_f.push([1, "37:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"OutletBoundary\"]\n38:\"$Sreact.suspense\"\n3b:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"ViewportBoundary\"]\n3d:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"MetadataBoundary\"]\n4:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"This is what we shipped, how we verified it, and what we are building next.\"}]\n5:[\"$\",\"h2\",null,{\"id\":\"verified\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Verification before support\"}]\n6:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Our payment guard checks that an x402 payment matches the quote it was offered against — offline, with no RPC. To recover the signer of an EIP-3009 authorization it needs the exact EIP-712 domain, and a guessed domain does not fail loudly. It recovers the\",\" \",[\"$\",\"em\",null,{\"children\":\"wrong signer\"}],\" and returns a confident wrong answer.\"]}]\n7:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"So we do not take domains from documentation. For both Arc networks we read\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] text-white/90\",\"children\":\"DOMAIN_SEPARATOR()\"}],\" \",\"off the deployed contract and confirmed it reproduces from the name and version we were about to ship. For mainnet we did it across four independent RPC providers so the entry does not rest on one endpoint’s word.\"]}]\n"])</script>
+    <script>self.__next_f.push([1, "8:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Arc Testnet chain id\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Arc Testnet chain id\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"5042002\"}]]}],[\"$\",\"div\",\"Arc mainnet chain id, confirmed on four providers\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Arc mainnet chain id, confirmed on four providers\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"5042\"}]]}],[\"$\",\"div\",\"USDC name / version / ERC-20 decimals\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"USDC name / version / ERC-20 decimals\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"USDC · 2 · 6\"}]]}],[\"$\",\"div\",\"DOMAIN_SEPARATOR reproduces from those values\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"DOMAIN_SEPARATOR reproduces from those values\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"both networks\"}]]}],[\"$\",\"div\",\"EIP-3009 dispatch confirmed\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"EIP-3009 dispatch confirmed\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"yes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "9:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"We also sent a deliberately malformed authorization and watched it revert\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] text-white/90\",\"children\":\"FiatTokenV2: invalid signature\"}],\", which proves the EIP-3009 path is really there rather than merely documented. A test pins each separator, so a drift in name or version cannot silently start recovering the wrong signer.\"]}]\na:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"One Arc-specific detail worth stating for anyone integrating: the native USDC balance has 18 decimals and the ERC-20 interface has 6, over the same underlying balance. Quotes are in ERC-20 base units. Mixing the two is an easy way to be off by a factor of a trillion.\"}]\nb:[\"$\",\"h2\",null,{\"id\":\"tasks\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"The boundary: a task the model cannot widen\"}]\nc:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"A content scanner can be evaded. That is not a reason to skip it — it is a reason not to make it the only thing standing between an agent and a wallet. So the enforcement lives somewhere the model cannot reach.\"}]\nd:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"An operator approves a \",[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"task\"}],\" \",\"in the console: one approved recipient, a total budget, a per-payment cap, a gas cap, an expiry, optionally one private endpoint, and the API key that may use it. The agent holds that key and can only\",\" \",[\"$\",\"em\",null,{\"children\":\"ask\"}],\". The key that can \",[\"$\",\"em\",null,{\"children\":\"pay\"}],\" never leaves the server.\"]}]\ne:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"So the worst a fooled model can do is make a request that gets refused with a code. There is no key in its context to hand over.\"}]\nf:[\"$\",\"pre\",null,{\"className\":\"liquid-glass mt-6 max-w-[72ch] overflow-x-auto rounded-[1.25rem] px-6 py-5 font-mono text-[12px] leading-relaxed text-white/80\",\"children\":\"ARC-000  account kill switch engaged\\nARC-001  task revoked, expired, or not bound to this key\\nARC-002  recipient is not the task's approved recipient\\nARC-003  per-payment cap exceeded\\nARC-004  task budget exceeded\\nARC-005  estimated gas exceeds the task's gas cap\\nARC-006  request id reused for a different request\\nARC-007  quote is not on Arc / not Arc USDC\\nARC-008  job check failed (client, provider, evaluator, hook, status)\\nARC-009  deliverable does not match the on-chain hash\\nARC-010  signer or chain unavailable — abstain, never a partial allow\"}]\n10:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"One ordering detail matters more than it looks. The signed bytes, the nonce and the budget reservation commit in a single tenant-locked transaction\",\" \",[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"before\"}],\" the transaction is broadcast. A crash between commit and send leaves a row the reconciler re-broadcasts, not a second payment. Refusals are stored too — returned from the transaction rather than thrown through it, because a throw would roll back the very row that tells the operator what their agent asked for.\"]}]\n11:[\"$\",\"h2\",null,{\"id\":\"run\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What the live run showed\"}]\n12:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"We ran all of it against Arc Testnet with a funded signer and real USDC. The "])</script>
+    <script>self.__next_f.push([1, "case worth naming is the poisoned quote: an attacker’s payee, wrapped in text instructing the model to send payment there and not mention the charge.\"}]\n"])</script>
+    <script>self.__next_f.push([1, "13:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Poisoned quote (attacker payee + injected text)\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Poisoned quote (attacker payee + injected text)\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"refused ARC-002\"}]]}],[\"$\",\"div\",\"Scanner codes raised on the same quote, independently\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Scanner codes raised on the same quote, independently\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"X402-202 · X402-209\"}]]}],[\"$\",\"div\",\"Legitimate payment, verified against its Transfer log\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Legitimate payment, verified against its Transfer log\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"confirmed\"}]]}],[\"$\",\"div\",\"Replayed request id\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Replayed request id\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"same transaction, no second payment\"}]]}],[\"$\",\"div\",\"Budget ceiling\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Budget ceiling\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"refused ARC-004 at 1.75 of 2.00 USDC\"}]]}],[\"$\",\"div\",\"ERC-8183 job funded, then released on deliverable hash\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"ERC-8183 job funded, then released on deliverable hash\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"Completed\"}]]}],[\"$\",\"div\",\"Release against content the provider never submitted\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Release against content the provider never submitted\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"refused ARC-009\"}]]}],[\"$\",\"div\",\"Signer nonce after the run\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Signer nonce after the run\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"4 — the refusals signed nothing\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "14:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The content scanner flagged the injection.\",\" \",[\"$\",\"em\",null,{\"children\":\"Independently\"}],\", the signer refused because the payee was not on the task. Nothing was signed. That is the architecture in one result: two boundaries, either of which holds alone.\"]}]\n15:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Afterwards everything reconciled — the merchant held exactly what was sent, the signer’s nonce equalled the number of real transactions, and the task ledger matched the chain. The refusals are rows, not transactions.\"}]\n16:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Two defects surfaced only because the run was live, and both are fixed. Our SSRF guard answered Node’s DNS lookup in the wrong shape and so could never open a socket — it failed \",[\"$\",\"em\",null,{\"children\":\"closed\"}],\", so it was safe, and every unit test passed because those tests only asked which addresses the classifier rejects. And ERC-8004 documents resolved through a single IPFS gateway, which is one outage away from “scanning unavailable”. Neither would have appeared without spending real testnet USDC.\"]}]\n17:[\"$\",\"h2\",null,{\"id\":\"registry\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What we learned from the registry\"}]\n18:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Building the agent-scanning half meant reading the ERC-8004 registry at scale, and what we found shaped what we plan to build next.\"}]\n"])</script>
+    <script>self.__next_f.push([1, "19:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Registered agent identities on testnet\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Registered agent identities on testnet\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"895,230\"}]]}],[\"$\",\"div\",\"Random sample read, second pass\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Random sample read, second pass\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"150 / 150  (0 errors)\"}]]}],[\"$\",\"div\",\"Records published as inline data: JSON\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Records published as inline data: JSON\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"139  (92.7%)\"}]]}],[\"$\",\"div\",\"Sampled agents declaring a service endpoint\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Sampled agents declaring a service endpoint\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"1\"}]]}],[\"$\",\"div\",\"Identity registry is a transferable ERC-721\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Identity registry is a transferable ERC-721\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"yes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "1a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Nearly 900,000 identities exist on testnet. In a random sample of 150, read without a single error, one declared a service endpoint. The typical record is a well-formed NFT profile — a name, an image, and trait badges like\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] text-white/90\",\"children\":\"\\\"Role\\\": \\\"DEX Trader\\\"\"}],\" \",\"— with no endpoint, price or callable schema.\"]}]\n1b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"There is a straightforward reason, and it is a tooling story rather than a criticism. ERC-8004 identities\",\" \",[\"$\",\"em\",null,{\"children\":\"are\"}],\" ERC-721 tokens, so every library that already exists emits OpenSea-style collectible metadata by default. The standard permits a document an agent could act on; the path of least resistance produces a profile card. On a testnet where registration is nearly free, that is exactly what you would expect to accumulate.\"]}]\n1c:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Two structural facts follow from the same ERC-721 inheritance. Identities are transferable, so whatever reputation an identity earns attaches to the token rather than the operator who earned it. And the registries are upgradeable proxies, so the meaning of a record can change without any address an integrator pinned changing.\"}]\n1d:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"None of that is unusual for infrastructure in its first weeks. It is the cheapest possible moment to build the checks, which is the point.\"}]\n1e:[\"$\",\"h2\",null,{\"id\":\"mainnet\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Mainnet, and what we deliberately did not carry over\"}]\n1f:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Arc mainnet opened on September 16. We added support the same day — but because we read the deployed contract, not because the date arrived. The USDC domain verifies across four providers, so payment conformance works on mainnet today.\"}]\n20:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The registries are the part we did \",[\"$\",\"em\",null,{\"children\":\"not\"}],\" carry over. ERC-8004 and ERC-8183 are not deployed at their testnet addresses on mainnet, so those fields are null there and our agent-scan and job-settlement endpoints refuse with a message naming exactly what to configure.\"]}]\n21:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Reusing a familiar address on a chain that has not deployed it would point the guard at whatever happens to occupy it, and the failure would present as success. The nullability lives in the type system rather than in a comment, so every call site had to pass a check the compiler enforces.\"}]\n22:[\"$\",\"h2\",null,{\"id\":\"pricing\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What it costs, and when we charge\"}]\n"])</script>
+    <script>self.__next_f.push([1, "23:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Authorized payment\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Authorized payment\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"$$0.01\"}]]}],[\"$\",\"div\",\"ERC-8183 job fund / release\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"ERC-8183 job fund / release\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"$$0.02\"}]]}],[\"$\",\"div\",\"Private delivery performed\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Private delivery performed\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"$$0.005\"}]]}],[\"$\",\"div\",\"Agent registration scan\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Agent registration scan\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"$$0.01\"}]]}],[\"$\",\"div\",\"Status, task listing, record sealing, verification\",{\"className\":\"grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[13px] font-light text-white/70\",\"children\":\"Status, task listing, record sealing, verification\"}],[\"$\",\"code\",null,{\"className\":\"font-mono text-[13px] font-medium text-white\",\"children\":\"free\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "24:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Two of those rules are commitments rather than implementation details, so they are tested rather than described.\"}]\n25:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"We charge when we sign, never for refusing.\"}],\" \",\"If a refusal earned revenue, the incentive would point the wrong way, and an operator could not tell whether a refusal was about their policy or our margin.\"]}]\n26:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"A retry is not billed twice.\"}],\" \",\"The charge is keyed on the execution’s own request hash, so an identical request reuses the ledger key and is absorbed — the same property that stops a retry from signing a second transaction. The 402 also arrives before any chain work, so short credit never leaves a half-signed transaction behind.\"]}]\n27:[\"$\",\"h2\",null,{\"id\":\"next\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What we are building next\"}]\n28:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"The registry measurements point at one thing more than any other. Reputation is what would let one agent tell a good counterparty from a bad one, and across three mainnets a published study of 173,441 agents found that 98.7–100% of feedback records carry no proof of payment, with the median cost of moving a score between $0.0027 and $0.055.\"}]\n29:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Reputation bound to settlement receipts.\"}],\" \",\"We already issue a signed receipt that binds a payment to a task, a recipient, an amount and a confirmed transaction. Binding a feedback record to one of those receipts makes a rating cost whatever the job cost, and makes Sybil raters pay each other real money to manufacture standing. This is downstream of the payment guard rather than a new foundation, which is why it is rarely built first — you need the receipts before you can require them.\"]}]\n2a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Identity provenance.\"}],\" \",\"Transferable identities mean history can change hands. Ownership transfer is an on-chain event; we want to surface it at the moment of decision, so “this agent changed owner last week and kept its history” is visible before you hire it.\"]}]\n2b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Registry and implementation attestation.\"}],\" \",\"Which registry is canonical, and has the implementation behind it changed? Both are checkable on chain, and a signed attestation is cheap to publish and free to verify.\"]}]\n2c:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Mainnet agent coverage, the moment it is real.\"}],\" \",\"When the ERC-8004 and ERC-8183 contracts land on mainnet we will read them the same way we read USDC — from the deployed contract, across multiple providers — and turn the scans on then.\"]}]\n2d:[\"$\",\"h2\",null,{\"id\":\"limits\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Limits\"}]\n2e:[\"$\",\"p\",null,{\"cl"])</script>
+    <script>self.__next_f.push([1, "assName\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Testnet registration is close to free, so the 895,230 figure mixes real deployment with airdrop positioning and we cannot separate the two. Our samples are 150–200 agents against roughly 895,000, so the proportions carry a few points of sampling error. The cross-chain reputation figures are cited from the published study and were not re-derived by us. Everything here is a snapshot of an ecosystem in its first weeks, and we expect the numbers to move.\"}]\n2f:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"One method note worth repeating because it changed the result: our first sample was rate-limited by the public RPC at 59 of 240 and reported materially different proportions. A truncated sample is a biased sample, so it was discarded rather than published. The reported samples completed 188/200 and 150/150 across four independent providers with paced requests.\"}]\n30:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Our private gateway is offchain and every receipt says so. Arc’s confidential execution is documented as on the roadmap, so nothing we issue claims a transfer on Arc hides a counterparty or an amount.\"}]\n31:[\"$\",\"p\",null,{\"className\":\"mt-16 max-w-[72ch] font-body text-xs font-light leading-relaxed text-white/50\",\"children\":[\"Measurements taken 2026-09-16 against Arc Testnet (5042002) and Arc mainnet (5042). Registry size by binary search on\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono\",\"children\":\"ownerOf\"}],\"; composition by two independent pseudo-random samples over the full id range; activity by\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono\",\"children\":\"eth_getLogs\"}],\" over 40,000 recent blocks. The payment guard is\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono\",\"children\":\"wormhole-x402\"}],\" on npm; the hosted layer is documented at\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono\",\"children\":\"/llms.txt\"}],\" and\",\" \",[\"$\",\"code\",null,{\"className\":\"font-mono\",\"children\":\"/api/openapi.json\"}],\". Negative findings mean “not found with substantial effort”, never “proven absent”.\"]}]\n32:[\"$\",\"$L37\",null,{\"children\":[\"$\",\"$38\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@39\"}]}]\n3a:[]\n33:\"$W3a\"\n34:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L3b\",null,{\"children\":\"$L3c\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L3d\",null,{\"children\":[\"$\",\"$38\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L3e\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n36:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script>
+    <script>self.__next_f.push([1, "3c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, maximum-scale=5\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"#000000\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "3f:I[27201,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"IconMark\"]\n39:null\n"])</script>
+    <script>self.__next_f.push([1, "3e:[[\"$\",\"title\",\"0\",{\"children\":\"Building the payment guard for Arc: what we shipped, and what we are building next · Agent Wormhole\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Arc puts agent identity, job escrow and USDC settlement on one chain. We shipped quote-conformance verification and a task-bound signer for both Arc Testnet and mainnet, verified against the deployed contracts. Here is how it works, what we measured, and what comes next.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"application-name\",\"content\":\"Agent Wormhole\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"AI agent security,agentic commerce security,prompt injection,x402 security,quote conformance,agentic trading guard,Robinhood MCP security,MCP security,agent payment verification,prompt worm\"}],[\"$\",\"meta\",\"4\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"link\",\"5\",{\"rel\":\"canonical\",\"href\":\"https://agentwormhole.com/research/arc-agent-registry\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"Building the payment guard for Arc\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"A task-bound signer the model cannot bypass, verified on Arc Testnet and mainnet. What we shipped, what we measured, and what we are building next.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image\",\"content\":\"https://agentwormhole.com/research/arc-agent-registry/opengraph-image?e01f86cf5fb6470c\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:alt\",\"content\":\"Building the payment guard for Arc — a task-bound signer verified against the deployed contracts on Arc Testnet and mainnet. Agent Wormhole engineering.\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"14\",{\"property\":\"article:published_time\",\"content\":\"2026-09-16\"}],[\"$\",\"meta\",\"15\",{\"property\":\"article:author\",\"content\":\"Agent Wormhole\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:title\",\"content\":\"Building the payment guard for Arc\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:description\",\"content\":\"Quote conformance and a task-bound signer, verified against the deployed contracts on both Arc networks.\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:image\",\"content\":\"https://agentwormhole.com/research/arc-agent-registry/opengraph-image?e01f86cf5fb6470c\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image:alt\",\"content\":\"Building the payment guard for Arc — a task-bound signer verified against the deployed contracts on Arc Testnet and mainnet. Agent Wormhole engineering.\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"link\",\"24\",{\"rel\":\"icon\",\"href\":\"/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"any\",\"type\":\"image/svg+xml\"}],[\"$\",\"link\",\"25\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"180x180\",\"type\":\"image/png\"}],[\"$\",\"$L3f\",\"26\",{}]]\n"])</script>
+</body>
+
+</html>

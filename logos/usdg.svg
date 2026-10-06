@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 172" width="32" height="32" role="img" aria-label="USDG">
+  <title>USDG — Global Dollar</title>
+  <!-- Global Dollar's brandmark (GDN_USDG_Brandmark), wordmark trimmed so
+       the disc sits square, and rendered in the row's greyscale rather
+       than brand colour. Every other mark here is grey — USDC is #ADADAD
+       on #F5F5F5 and this matches it exactly — so keeping the lime would
+       make one asset shout in a row designed to read as one set. The
+       shape is untouched; only the fills differ. -->
+  <circle cx="78" cy="94" r="78" fill="#ADADAD"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M135.989 98.2294C133.744 128.23 108.684 151.873 78.0996 151.873C46.038 151.873 20.0469 125.89 20.0469 93.8382C20.0469 61.7866 46.038 35.8037 78.0996 35.8037C108.633 35.8037 133.661 59.3692 135.977 89.2993H108.223C114.281 75.9114 114.648 63.7476 108.022 58.1897C98.237 49.9819 76.9083 59.2886 60.3827 78.9769C43.857 98.6651 38.3925 121.279 48.1773 129.487C57.962 137.695 79.2908 128.388 95.8164 108.7C98.697 105.268 101.241 101.747 103.428 98.2294H135.989Z" fill="#F5F5F5"/>
+  <path d="M82.46 98.2295H105.675L96.71 109.967L82.46 104.248V98.2295Z" fill="#F5F5F5"/>
+</svg>

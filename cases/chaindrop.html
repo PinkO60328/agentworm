@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html data-dpl-id="dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" lang="en"
+    class="instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased">
+
+<head>
+    <script src="../nav-fix.js"></script>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <link rel="preload"
+        href="/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload"
+        href="/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        as="font" crossorigin="" type="font/woff2" />
+    <link rel="stylesheet" href="/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low"
+        href="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+    <script src="/_next/static/chunks/453pof2vctwbe.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/3psrapv-whp7s.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/1upe53-127sm4.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/turbopack-3cgtxutfl_k-9.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7"
+        async=""></script>
+    <script src="/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <script src="/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" async=""></script>
+    <meta name="next-size-adjust" content="" />
+    <meta name="theme-color" content="#000000" />
+    <title>ChainDrop — the npm worm that hid in agent config · Agent Wormhole</title>
+    <meta name="description"
+        content="August 4, 2026: a self-propagating npm worm poisoned 444 packages in under four hours, stole agent credentials, and planted a SessionStart hook in .claude/settings.json. What it did, and which control refuses it." />
+    <meta name="application-name" content="Agent Wormhole" />
+    <meta name="keywords"
+        content="ChainDrop,Shai-Hulud,Mini Shai-Hulud,npm supply chain attack,keyv compromise,npm worm,Claude Code security,SessionStart hook malware,agent config persistence,EtherHiding" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://agentwormhole.com/cases/chaindrop" />
+    <meta property="og:title" content="ChainDrop: the npm worm that wrote itself into agent config" />
+    <meta property="og:description"
+        content="444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it." />
+    <meta property="og:url" content="https://agentwormhole.com/cases/chaindrop" />
+    <meta property="og:image"
+        content="https://agentwormhole.com/cases/chaindrop/opengraph-image.jpg?opengraph-image.099zm_kns8_v8.jpg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Agent Wormhole case study
+" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-08-05T00:00:00.000Z" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ChainDrop: the npm worm that wrote itself into agent config" />
+    <meta name="twitter:description"
+        content="444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it." />
+    <meta name="twitter:image"
+        content="https://agentwormhole.com/cases/chaindrop/twitter-image.jpg?twitter-image.099zm_kns8_v8.jpg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" />
+    <meta name="twitter:image:alt" content="Agent Wormhole case study
+" />
+    <meta name="twitter:image:type" content="image/jpeg" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <link rel="icon" href="/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" sizes="any"
+        type="image/svg+xml" />
+    <link rel="apple-touch-icon"
+        href="/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" sizes="180x180"
+        type="image/png" />
+    <script src="/_next/static/chunks/0cz1d0mv5g_q7.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" noModule=""></script>
+</head>
+
+<body class="flex min-h-full flex-col">
+    <div hidden=""><!--$--><!--/$--></div>
+    <main class="relative bg-black">
+        <div class="mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24"><a href="../cases.html"
+                class="font-body text-sm text-white/60 hover:text-white">← Case studies</a>
+            <div class="mt-10 flex flex-wrap items-center gap-x-3 gap-y-1"><span
+                    class="font-body text-[10px] font-medium uppercase tracking-[0.16em] text-white/50">August 4,
+                    2026</span><span class="font-mono text-[11px] text-critical">444 packages · ~2B monthly
+                    downloads</span></div>
+            <h1 class="mt-4 font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl">
+                ChainDrop</h1>
+            <p class="mt-6 max-w-[68ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-base">A
+                self-propagating npm worm that, in under four hours, poisoned hundreds of packages sitting underneath
+                most of the JavaScript ecosystem. It stole credentials, republished itself using the tokens it stole,
+                and — the part this page is about — wrote itself into the configuration files that AI coding agents read
+                on startup.</p>
+            <h2 id="what" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What
+                happened</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">On
+                August 4, 2026, an attacker compromised the GitHub account of the maintainer behind <span
+                    class="font-mono text-[13px]">keyv</span>,<!-- --> <span
+                    class="font-mono text-[13px]">cacheable</span>,<!-- --> <span
+                    class="font-mono text-[13px]">flat-cache</span> and<!-- --> <span
+                    class="font-mono text-[13px]">file-entry-cache</span> — four libraries almost nobody installs
+                deliberately and almost everybody installs anyway, as transitive dependencies of ordinary tooling.
+                StepSecurity notes the commits were unsigned and pushed directly to<!-- --> <span
+                    class="font-mono text-[13px]">main</span>, indicating API access to the account rather than a stolen
+                npm token.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                poisoned release went out through the project’s own GitHub Actions release workflow. That detail matters
+                more than it first appears: because the malicious code travelled the legitimate pipeline, it arrived
+                carrying valid OIDC and SLSA provenance attestations, and the compromised commit displayed a green
+                GitHub-verified badge naming<!-- --> <span class="font-mono text-[13px]">github-actions[bot]</span> as
+                its author. Supply-chain provenance answered the question it was built to answer — this artifact really
+                was produced by that pipeline — and that question turned out not to be the one anybody needed answered.
+            </p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Counts differ by researcher and by the hour they stopped counting. StepSecurity and Microsoft report 444
+                packages across 2,212 versions; SafeDep reports 1,684 versions across 420 names; Aikido reports 868
+                packages across 1,381 versions. The disagreement is a property of measuring a worm while it is still
+                running, not a contradiction.</p>
+            <h2 id="chain" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">The
+                infection chain</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">A
+                <span class="font-mono text-[13px]">preinstall</span> hook in<!-- --> <span
+                    class="font-mono text-[13px]">package.json</span> runs<!-- --> <span
+                    class="font-mono text-[13px]">node setup.mjs</span>— before installation even finishes. The dropper
+                detects OS and architecture, then downloads the genuine Bun runtime, v1.3.13, from Bun’s official GitHub
+                releases. The network indicator points at<!-- --> <span class="font-mono text-[13px]">github.com</span>,
+                not at attacker infrastructure. It then executes a ~728 KB obfuscated bundle through Bun, sidestepping
+                anything watching Node specifically, and deletes the runtime afterwards.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                payload harvests across roughly 140 filesystem locations: npm and GitHub tokens, AWS, Azure and GCP
+                credentials, Kubernetes configs, Vault tokens, SSH keys, shell history. In CI it scrapes GitHub Actions
+                runner memory for<!-- --> <span class="font-mono text-[13px]">&quot;isSecret&quot;:true</span>
+                <!-- -->fragments. It exits on Russian-language systems.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Exfiltration is gzip-compressed, AES-256-GCM encrypted under a random per-run key, that key wrapped with
+                an embedded RSA public key — so only the operator can read what was taken, even if you capture it. The
+                destination domain is not hardcoded. It is fetched from an Ethereum mainnet contract via<!-- --> <span
+                    class="font-mono text-[13px]">eth_call</span>, a technique known as EtherHiding, with GitHub
+                commit-search queries as a fallback. There is no domain to sinkhole because the operator rotates it
+                on-chain.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Then
+                it propagates. Stolen npm tokens are checked for write permission and 2FA-bypass capability, the
+                victim’s publishable packages are enumerated, each tarball is downloaded, injected, version-bumped, and
+                republished — with freshly generated provenance. Microsoft’s summary of the blast radius is the line
+                worth keeping:<!-- --> <em>one stolen token can produce malicious patch releases across every package
+                    available to that publisher</em>.</p>
+            <h2 id="agents" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">The part
+                that concerns agents</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Alongside the npm propagation, the worm committed two files into the repositories it reached — on all
+                branches, via the GitHub GraphQL API:</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-5 py-1 sm:px-6">
+                <div class="py-4">
+                    <div class="font-mono text-[12.5px] leading-relaxed text-white sm:flex sm:items-baseline sm:gap-4">
+                        <span
+                            class="block sm:w-[188px] sm:shrink-0 [overflow-wrap:anywhere]">.claude/settings.json</span><span
+                            class="mt-1.5 block text-white/70 sm:mt-0">SessionStart hook</span></div>
+                    <div class="mt-1.5 flex items-baseline gap-2 font-mono text-[12.5px] leading-relaxed"><span
+                            aria-hidden="true" class="text-white/40">→</span><span
+                            class="text-white/85 [overflow-wrap:anywhere]">node .vscode/setup.mjs</span></div>
+                </div>
+                <div class="py-4">
+                    <div class="font-mono text-[12.5px] leading-relaxed text-white sm:flex sm:items-baseline sm:gap-4">
+                        <span
+                            class="block sm:w-[188px] sm:shrink-0 [overflow-wrap:anywhere]">.vscode/tasks.json</span><span
+                            class="mt-1.5 block text-white/70 sm:mt-0">runOn: folderOpen</span></div>
+                    <div class="mt-1.5 flex items-baseline gap-2 font-mono text-[12.5px] leading-relaxed"><span
+                            aria-hidden="true" class="text-white/40">→</span><span
+                            class="text-white/85 [overflow-wrap:anywhere]">node .claude/setup.mjs</span></div>
+                </div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Each
+                points at a dropper the other directory carries. Neither needs<!-- --> <span
+                    class="font-mono text-[13px]">npm install</span> to run again. Opening the folder in VS Code
+                re-executes the payload. Starting a Claude Code session in it re-executes the payload. The infection now
+                outlives the dependency that delivered it: you can remove the poisoned package, purge the cache, pin a
+                clean version, and the hook is still sitting in your repository waiting for the next session to start.
+                It also ships to every developer who clones the repo, because it is committed to source control.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">This
+                is not incidental. The worm separately targets<!-- --> <span
+                    class="font-mono text-[13px]">.claude/credentials.json</span>, <span
+                    class="font-mono text-[13px]">.cursor/credentials.json</span>, <span
+                    class="font-mono text-[13px]">.openai/auth.json</span> and<!-- --> <span
+                    class="font-mono text-[13px]">.anthropic/auth.json</span>. Agent credentials are now a harvest
+                category alongside AWS keys, and agent config is now a persistence surface alongside systemd. Aikido
+                ties the same<!-- --> <span class="font-mono text-[13px]">setup.mjs</span> filename, the same Bun 1.3.13
+                download and the same two hooks to the April 2026<!-- --> <span
+                    class="font-mono text-[13px]">lightning</span> PyPI compromise — this is a reused, maintained
+                capability, not a one-off.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">There
+                is also a component that punishes the correct response. The worm installs<!-- --> <span
+                    class="font-mono text-[13px]">~/.local/bin/gh-token-monitor.sh</span> <!-- -->with a systemd user
+                service or a macOS LaunchAgent, checks the stolen token every 60 seconds for 24 hours, and fires an
+                attacker handler when the token is revoked. SafeDep’s guidance follows from it: rotate credentials
+                <em>before</em> revoking, and remove the watcher first.</p>
+            <h2 id="timeline" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Timeline
+            </h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">All
+                times UTC, August 4, 2026, per StepSecurity and Datadog.</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">09:02:37</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">Poisoned
+                        commit pushed to jaredwray/keyv main.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">09:04:30</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">A second
+                        commit plants .claude/settings.json and .vscode/tasks.json hooks in the repository
+                        itself.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">09:35:00</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">keyv@6.0.0
+                        published through the project&#x27;s own GitHub Actions release workflow — with valid
+                        provenance.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">09:38:13</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">Second wave
+                        begins. The worm publishes on its own, using credentials it just stole.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">10:06–10:14</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">Nine
+                        @cacheable/* and cache-manager versions published.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">10:17:44</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">First public
+                        alarm raised on GitHub — 42 minutes after keyv@6.0.0.</span></div>
+                <div class="flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5"><span
+                        class="shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]">10:39+</span><span
+                        class="max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80">npm begins
+                        unpublishing.</span></div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Roughly 34 minutes from the first malicious publish to the worm publishing on its own, and 42 to the
+                first public alarm. Any control that depends on a human reading an advisory was going to lose that race.
+            </p>
+            <h2 id="control" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Which
+                control applies</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Honest scope first, because the temptation to overclaim here is obvious.<!-- --> <strong
+                    class="font-medium text-white">Agent Wormhole would not have stopped the compromise.</strong>
+                <!-- -->It does not inspect npm tarballs, it does not sandbox<!-- --> <span
+                    class="font-mono text-[13px]">preinstall</span>, and it has nothing to say about a stolen maintainer
+                account. By the time the dropper runs, your credentials are gone. Nothing on this site changes that.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">What
+                it addresses is the second half — persistence. The two hooks above are the exact shape the<!-- --> <span
+                    class="font-mono text-[13px]">autostart</span>scanner was written for, after Miasma used the same
+                mechanism across 73 Microsoft repositories in June 2026. Run against a repository carrying ChainDrop’s
+                artifacts, both are flagged:</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-5 py-1 sm:px-6">
+                <div class="py-4">
+                    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1"><span
+                            class="font-mono text-[11px] font-medium tracking-[0.08em] text-critical">HIGH</span><span
+                            class="font-mono text-[11px] text-white/50">AUTOSTART-003</span><span
+                            class="font-mono text-[12.5px] text-white [overflow-wrap:anywhere]">.claude/settings.json</span>
+                    </div>
+                    <p class="mt-2 max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/75">
+                        SessionStart hook runs an interpreter<!-- -->, unprompted.</p>
+                    <p class="mt-1.5 font-mono text-[12px] leading-relaxed text-white/85 [overflow-wrap:anywhere]">node
+                        .vscode/setup.mjs</p>
+                </div>
+                <div class="py-4">
+                    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1"><span
+                            class="font-mono text-[11px] font-medium tracking-[0.08em] text-critical">HIGH</span><span
+                            class="font-mono text-[11px] text-white/50">AUTOSTART-003</span><span
+                            class="font-mono text-[12.5px] text-white [overflow-wrap:anywhere]">.vscode/tasks.json</span>
+                    </div>
+                    <p class="mt-2 max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/75">
+                        folderOpen hook runs an interpreter<!-- -->, unprompted.</p>
+                    <p class="mt-1.5 font-mono text-[12px] leading-relaxed text-white/85 [overflow-wrap:anywhere]">node
+                        .claude/setup.mjs</p>
+                </div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                prevention half is<!-- --> <span class="font-mono text-[13px]">wormhole harden</span>, and the reason it
+                works is unintuitive: it creates these files when they are <em>absent</em>, empty and read-only. You
+                cannot<!-- --> <span class="font-mono text-[13px]">chmod</span>a file that does not exist, and ChainDrop
+                — like Miasma — persists by creating configuration in repositories that never had it. With inert 0444
+                placeholders in place, the worm’s write is refused by the operating system rather than reported after
+                the fact.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Two
+                caveats stated plainly. Hardening does not contain an agent running as root, which is common in CI and
+                in default Docker images — root ignores the mode bit. And a scanner that reports a hook after it has
+                fired has told you about an incident, not prevented one; the creation-blocking half is the one that
+                matters here.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Worth
+                naming as a finding rather than a feature:<!-- --> <em>testing the tool against this incident surfaced a
+                    real bug in it</em>. <span class="font-mono text-[13px]">harden</span> checked whether any existing
+                config needed locking, found none, and exited reporting nothing to do — before it ever consulted the
+                list of paths to pre-create. A repository with no writable agent config is precisely the case where
+                pre-creation is the only control that does anything, and it was the case being skipped. Fixed, with a
+                regression test verified to fail against the previous code.</p>
+            <h2 id="do" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">What to
+                actually do</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                vendor guidance below is not ours and does not involve this tool. It is the part that matters most, so
+                it goes first.</p>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="py-4">
+                    <div class="font-body text-[13px] font-medium text-white">Check lockfiles, not namespaces</div>
+                    <p class="mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70">
+                        Compare resolved versions against the published affected lists. Clean versions were restored as
+                        `latest` within hours, so a namespace blocklist tells you little and the tag tells you less.</p>
+                </div>
+                <div class="py-4">
+                    <div class="font-body text-[13px] font-medium text-white">Treat any environment that installed an
+                        affected version as credential-exposed</div>
+                    <p class="mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70">Rotate
+                        from a clean host. Remove ~/.local/bin/gh-token-monitor.sh and its service unit before revoking
+                        anything.</p>
+                </div>
+                <div class="py-4">
+                    <div class="font-body text-[13px] font-medium text-white">Grep your repositories for the hooks</div>
+                    <p class="mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70">
+                        `.claude/settings.json`, `.vscode/tasks.json`, and any `setup.mjs` in either directory. Check
+                        every branch — the worm committed via GraphQL to all of them.</p>
+                </div>
+                <div class="py-4">
+                    <div class="font-body text-[13px] font-medium text-white">Upgrade npm CLI to v12 and disable install
+                        scripts</div>
+                    <p class="mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70">v12
+                        blocks unapproved dependency lifecycle scripts by default and adds min-release-age. This is the
+                        control that actually breaks the preinstall vector.</p>
+                </div>
+            </div>
+            <h2 id="matters" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Why this
+                one is different</h2>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">The
+                other pages in this section describe agents talked into moving money. This one is not that. No model was
+                injected, no agent was persuaded of anything — ChainDrop is ordinary malware in the sense that it runs
+                code, steals secrets, and copies itself, and it would have worked in 2015.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">What
+                is new is where it chose to live. An agent config file is a uniquely good hiding place: it executes
+                automatically, it survives uninstalling the thing that put it there, it is committed to source control
+                so it spreads to every clone, and — unlike a systemd unit — almost nobody reviews it, because until
+                recently there was nothing dangerous to find. ChainDrop treated agent tooling as infrastructure worth
+                persisting in and agent credentials as secrets worth stealing. That is the shift, and it is now attested
+                by Microsoft, Datadog, StepSecurity, Aikido and Wiz rather than by a research preprint.</p>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">Which
+                also fixes the honest gap named on the<!-- --> <a href="../cases.html#not-worms"
+                    class="text-white underline decoration-white/30 hover:decoration-white">index page</a>.
+                Self-replication in agent-adjacent software is no longer lab-only, and the config-persistence mechanic
+                is no longer a single incident. The combination still missing from the public record is a
+                self-replicating payload that steals money on-chain — ChainDrop stole wallet files, but it stole them
+                the way it stole SSH keys, not by talking an agent into a payment. That join has not happened yet, and
+                saying otherwise would be the overclaim these pages exist to avoid.</p>
+            <h2 id="sources" class="mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl">Sources
+            </h2>
+            <div class="liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2">
+                <div class="py-3.5"><a
+                        href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">Microsoft
+                        Security Blog — ChainDrop supply chain compromise: anatomy of a self-propagating worm</a></div>
+                <div class="py-3.5"><a href="https://www.stepsecurity.io/blog/chaindrop-npm-worm"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">StepSecurity
+                        — ChainDrop npm Worm: Bun-loaded CI/CD credential harvester with Ethereum dead-drop C2</a></div>
+                <div class="py-3.5"><a
+                        href="https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">Datadog
+                        Security Labs — Worm compromises hundreds of popular npm packages</a></div>
+                <div class="py-3.5"><a
+                        href="https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">The
+                        Hacker News — Keyv-linked npm worm poisons hundreds of packages, plants Claude Code and VS Code
+                        hooks</a></div>
+                <div class="py-3.5"><a
+                        href="https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">Aikido
+                        — Keyv and friends compromised in active Shai-Hulud supply chain attack</a></div>
+                <div class="py-3.5"><a href="https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack"
+                        class="font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white">Wiz
+                        — keyv and cacheable npm package hijacked in supply chain attack</a></div>
+            </div>
+            <p class="mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]">
+                Package counts vary between these reports and the range is given above rather than a single convenient
+                number. Where a detail appears in only one source — the token-monitor punishment handler, the
+                Russian-language exit, the PyPI overlap — the source is named inline.</p>
+            <script
+                type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ChainDrop: the npm worm that wrote itself into agent config","description":"444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it.","datePublished":"2026-08-05","about":{"@type":"Thing","name":"ChainDrop npm supply chain worm"},"publisher":{"@type":"Organization","name":"Agent Wormhole","url":"https://agentwormhole.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://agentwormhole.com/cases/chaindrop"},"citation":[{"@type":"CreativeWork","name":"Microsoft Security Blog — ChainDrop supply chain compromise: anatomy of a self-propagating worm","url":"https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/"},{"@type":"CreativeWork","name":"StepSecurity — ChainDrop npm Worm: Bun-loaded CI/CD credential harvester with Ethereum dead-drop C2","url":"https://www.stepsecurity.io/blog/chaindrop-npm-worm"},{"@type":"CreativeWork","name":"Datadog Security Labs — Worm compromises hundreds of popular npm packages","url":"https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/"},{"@type":"CreativeWork","name":"The Hacker News — Keyv-linked npm worm poisons hundreds of packages, plants Claude Code and VS Code hooks","url":"https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html"},{"@type":"CreativeWork","name":"Aikido — Keyv and friends compromised in active Shai-Hulud supply chain attack","url":"https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack"},{"@type":"CreativeWork","name":"Wiz — keyv and cacheable npm package hijacked in supply chain attack","url":"https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack"}]}</script>
+            <div class="mt-20 border-t border-white/10 pt-6 font-body text-xs text-white/50">Agent Wormhole · Apache 2.0
+                ·<!-- --> <a href="https://github.com/runningoffcode/agent-wormhole" class="hover:text-white">GitHub</a>
+                <!-- -->·<!-- --> <a href="../docs.html" class="hover:text-white">Docs</a> <!-- -->·<!-- --> <a href="../cases.html"
+                    class="hover:text-white">Cases</a></div>
+        </div>
+    </main><!--$--><!--/$-->
+    <script src="/_next/static/chunks/3-5k80pt3ds20.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7" id="_R_" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0])</script>
+    <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\"]\n30:I[68027,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"default\",1]\n:HL[\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"style\"]\n:HL[\"/_next/static/media/235a0ef330592118-s.p.0_dtpe4r-myal.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6c98c9fb873995d2-s.p.22ggkaf3lyu8c.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c6e2684784a55443-s.p.2p4adm_386h58.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n"])</script>
+    <script>self.__next_f.push([1, "0:{\"P\":null,\"c\":[\"\",\"cases\",\"chaindrop\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"cases\",{\"children\":[\"chaindrop\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"instrument_serif_ef35ef0a-module__aJb9Ga__variable barlow_e0ccecdb-module__1Gf-lW__variable jetbrains_mono_823da275-module__MuvQuW__variable h-full antialiased\",\"children\":[\"$\",\"body\",null,{\"className\":\"flex min-h-full flex-col\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"relative bg-black\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-[880px] px-6 py-16 md:px-8 md:py-24\",\"children\":[[\"$\",\"a\",null,{\"href\":\"../cases.html\",\"className\":\"font-body text-sm text-white/60 hover:text-white\",\"children\":\"← Case studies\"}],[\"$\",\"div\",null,{\"className\":\"mt-10 flex flex-wrap items-center gap-x-3 gap-y-1\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-body text-[10px] font-medium uppercase tracking-[0.16em] text-white/50\",\"children\":\"August 4, 2026\"}],[\"$\",\"span\",null,{\"className\":\"font-mono text-[11px] text-critical\",\"children\":\"444 packages · ~2B monthly downloads\"}]]}],[\"$\",\"h1\",null,{\"className\":\"mt-4 font-heading text-5xl italic leading-[0.95] tracking-[-2px] text-white md:text-6xl\",\"children\":\"ChainDrop\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 max-w-[68ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-base\",\"children\":\"A self-propagating npm worm that, in under four hours, poisoned hundreds of packages sitting underneath most of the JavaScript ecosystem. It stole credentials, republished itself using the tokens it stole, and — the part this page is about — wrote itself into the configuration files that AI coding agents read on startup.\"}],[\"$\",\"h2\",null,{\"id\":\"what\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What happened\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"On August 4, 2026, an attacker compromised the GitHub account of the maintainer behind \",\"$L4\",\",\",\" \",\"$L5\",\",\",\" \",\"$L6\",\" and\",\" \",\"$L7\",\" — four libraries almost nobody installs deliberately and almost everybody installs anyway, as transitive dependencies of ordinary tooling. StepSecurity notes the commits were unsigned and pushed directly to\",\" \",\"$L8\",\", indicating API access to the account rather than a stolen npm token.\"]}],\"$L9\",\"$La\",\"$Lb\",\"$Lc\",\"$Ld\",\"$Le\",\"$Lf\",\"$L10\",\"$L11\",\"$L12\",\"$L13\",\"$L14\",\"$L15\",\"$L16\",\"$L17\",\"$L18\",\"$L19\",\"$L1a\",\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\",\"$L1f\",\"$L20\",\"$L21\",\"$L22\",\"$L23\",\"$L24\",\"$L25\",\"$L26\",\"$L27\",\"$L28\",\"$L29\",\"$L2a\",\"$L2b\",\"$L2c\"]}]}],null,\"$L2d\"]}],{},null,false,null]},null,false,\"$@2e\"]},null,false,\"$@2e\"]},null,false,null],\"$L2f\",false]],\"m\":\"$undefined\",\"G\":[\"$30\",[\"$L31\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\"}\n"])</script>
+    <script>self.__next_f.push([1, "33:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"OutletBoundary\"]\n34:\"$Sreact.suspense\"\n37:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"ViewportBoundary\"]\n39:I[97367,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"MetadataBoundary\"]\n4:[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"keyv\"}]\n5:[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"cacheable\"}]\n6:[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"flat-cache\"}]\n7:[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"file-entry-cache\"}]\n8:[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"main\"}]\n9:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The poisoned release went out through the project’s own GitHub Actions release workflow. That detail matters more than it first appears: because the malicious code travelled the legitimate pipeline, it arrived carrying valid OIDC and SLSA provenance attestations, and the compromised commit displayed a green GitHub-verified badge naming\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"github-actions[bot]\"}],\" as its author. Supply-chain provenance answered the question it was built to answer — this artifact really was produced by that pipeline — and that question turned out not to be the one anybody needed answered.\"]}]\na:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Counts differ by researcher and by the hour they stopped counting. StepSecurity and Microsoft report 444 packages across 2,212 versions; SafeDep reports 1,684 versions across 420 names; Aikido reports 868 packages across 1,381 versions. The disagreement is a property of measuring a worm while it is still running, not a contradiction.\"}]\nb:[\"$\",\"h2\",null,{\"id\":\"chain\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"The infection chain\"}]\nc:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"A \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"preinstall\"}],\" hook in\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"package.json\"}],\" runs\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"node setup.mjs\"}],\"— before installation even finishes. The dropper detects OS and architecture, then downloads the genuine Bun runtime, v1.3.13, from Bun’s official GitHub releases. The network indicator points at\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"github.com\"}],\", not at attacker infrastructure. It then executes a ~728 KB obfuscated bundle through Bun, sidestepping anything watching Node specifically, and deletes the runtime afterwards.\"]}]\nd:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The payload harvests across roughly 140 filesystem locations: npm and GitHub tokens, AWS, Azure and GCP credentials, Kubernetes configs, Vault tokens, SSH keys, shell history. In CI it scrapes GitHub Actions runner memory for\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"\\\"isSecret\\\":true\"}],\" \",\"fragments. It exits on Russian-language systems.\"]}]\ne:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Exfiltration is gzip-compressed, AES-256-GCM encrypted under a random per-run key, that key wrapped with an embedded RSA public key — so only the operator can r"])</script>
+    <script>self.__next_f.push([1, "ead what was taken, even if you capture it. The destination domain is not hardcoded. It is fetched from an Ethereum mainnet contract via\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"eth_call\"}],\", a technique known as EtherHiding, with GitHub commit-search queries as a fallback. There is no domain to sinkhole because the operator rotates it on-chain.\"]}]\nf:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Then it propagates. Stolen npm tokens are checked for write permission and 2FA-bypass capability, the victim’s publishable packages are enumerated, each tarball is downloaded, injected, version-bumped, and republished — with freshly generated provenance. Microsoft’s summary of the blast radius is the line worth keeping:\",\" \",[\"$\",\"em\",null,{\"children\":\"one stolen token can produce malicious patch releases across every package available to that publisher\"}],\".\"]}]\n10:[\"$\",\"h2\",null,{\"id\":\"agents\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"The part that concerns agents\"}]\n11:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Alongside the npm propagation, the worm committed two files into the repositories it reached — on all branches, via the GitHub GraphQL API:\"}]\n"])</script>
+    <script>self.__next_f.push([1, "12:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-5 py-1 sm:px-6\",\"children\":[[\"$\",\"div\",\".claude/settings.json\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-mono text-[12.5px] leading-relaxed text-white sm:flex sm:items-baseline sm:gap-4\",\"children\":[[\"$\",\"span\",null,{\"className\":\"block sm:w-[188px] sm:shrink-0 [overflow-wrap:anywhere]\",\"children\":\".claude/settings.json\"}],[\"$\",\"span\",null,{\"className\":\"mt-1.5 block text-white/70 sm:mt-0\",\"children\":\"SessionStart hook\"}]]}],[\"$\",\"div\",null,{\"className\":\"mt-1.5 flex items-baseline gap-2 font-mono text-[12.5px] leading-relaxed\",\"children\":[[\"$\",\"span\",null,{\"aria-hidden\":true,\"className\":\"text-white/40\",\"children\":\"→\"}],[\"$\",\"span\",null,{\"className\":\"text-white/85 [overflow-wrap:anywhere]\",\"children\":\"node .vscode/setup.mjs\"}]]}]]}],[\"$\",\"div\",\".vscode/tasks.json\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-mono text-[12.5px] leading-relaxed text-white sm:flex sm:items-baseline sm:gap-4\",\"children\":[[\"$\",\"span\",null,{\"className\":\"block sm:w-[188px] sm:shrink-0 [overflow-wrap:anywhere]\",\"children\":\".vscode/tasks.json\"}],[\"$\",\"span\",null,{\"className\":\"mt-1.5 block text-white/70 sm:mt-0\",\"children\":\"runOn: folderOpen\"}]]}],[\"$\",\"div\",null,{\"className\":\"mt-1.5 flex items-baseline gap-2 font-mono text-[12.5px] leading-relaxed\",\"children\":[[\"$\",\"span\",null,{\"aria-hidden\":true,\"className\":\"text-white/40\",\"children\":\"→\"}],[\"$\",\"span\",null,{\"className\":\"text-white/85 [overflow-wrap:anywhere]\",\"children\":\"node .claude/setup.mjs\"}]]}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "13:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Each points at a dropper the other directory carries. Neither needs\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"npm install\"}],\" to run again. Opening the folder in VS Code re-executes the payload. Starting a Claude Code session in it re-executes the payload. The infection now outlives the dependency that delivered it: you can remove the poisoned package, purge the cache, pin a clean version, and the hook is still sitting in your repository waiting for the next session to start. It also ships to every developer who clones the repo, because it is committed to source control.\"]}]\n14:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"This is not incidental. The worm separately targets\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\".claude/credentials.json\"}],\", \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\".cursor/credentials.json\"}],\", \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\".openai/auth.json\"}],\" and\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\".anthropic/auth.json\"}],\". Agent credentials are now a harvest category alongside AWS keys, and agent config is now a persistence surface alongside systemd. Aikido ties the same\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"setup.mjs\"}],\" filename, the same Bun 1.3.13 download and the same two hooks to the April 2026\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"lightning\"}],\" PyPI compromise — this is a reused, maintained capability, not a one-off.\"]}]\n15:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"There is also a component that punishes the correct response. The worm installs\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"~/.local/bin/gh-token-monitor.sh\"}],\" \",\"with a systemd user service or a macOS LaunchAgent, checks the stolen token every 60 seconds for 24 hours, and fires an attacker handler when the token is revoked. SafeDep’s guidance follows from it: rotate credentials \",[\"$\",\"em\",null,{\"children\":\"before\"}],\" revoking, and remove the watcher first.\"]}]\n16:[\"$\",\"h2\",null,{\"id\":\"timeline\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Timeline\"}]\n17:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"All times UTC, August 4, 2026, per StepSecurity and Datadog.\"}]\n"])</script>
+    <script>self.__next_f.push([1, "18:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"09:02:37\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"09:02:37\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"Poisoned commit pushed to jaredwray/keyv main.\"}]]}],[\"$\",\"div\",\"09:04:30\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"09:04:30\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"A second commit plants .claude/settings.json and .vscode/tasks.json hooks in the repository itself.\"}]]}],[\"$\",\"div\",\"09:35:00\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"09:35:00\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"keyv@6.0.0 published through the project's own GitHub Actions release workflow — with valid provenance.\"}]]}],[\"$\",\"div\",\"09:38:13\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"09:38:13\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"Second wave begins. The worm publishes on its own, using credentials it just stole.\"}]]}],[\"$\",\"div\",\"10:06–10:14\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"10:06–10:14\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"Nine @cacheable/* and cache-manager versions published.\"}]]}],[\"$\",\"div\",\"10:17:44\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"10:17:44\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"First public alarm raised on GitHub — 42 minutes after keyv@6.0.0.\"}]]}],[\"$\",\"div\",\"10:39+\",{\"className\":\"flex flex-col gap-1 py-3.5 sm:flex-row sm:gap-5\",\"children\":[[\"$\",\"span\",null,{\"className\":\"shrink-0 font-mono text-[12px] text-white/55 sm:w-[92px]\",\"children\":\"10:39+\"}],[\"$\",\"span\",null,{\"className\":\"max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/80\",\"children\":\"npm begins unpublishing.\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "19:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Roughly 34 minutes from the first malicious publish to the worm publishing on its own, and 42 to the first public alarm. Any control that depends on a human reading an advisory was going to lose that race.\"}]\n1a:[\"$\",\"h2\",null,{\"id\":\"control\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Which control applies\"}]\n1b:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Honest scope first, because the temptation to overclaim here is obvious.\",\" \",[\"$\",\"strong\",null,{\"className\":\"font-medium text-white\",\"children\":\"Agent Wormhole would not have stopped the compromise.\"}],\" \",\"It does not inspect npm tarballs, it does not sandbox\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"preinstall\"}],\", and it has nothing to say about a stolen maintainer account. By the time the dropper runs, your credentials are gone. Nothing on this site changes that.\"]}]\n1c:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"What it addresses is the second half — persistence. The two hooks above are the exact shape the\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"autostart\"}],\"scanner was written for, after Miasma used the same mechanism across 73 Microsoft repositories in June 2026. Run against a repository carrying ChainDrop’s artifacts, both are flagged:\"]}]\n"])</script>
+    <script>self.__next_f.push([1, "1d:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-5 py-1 sm:px-6\",\"children\":[[\"$\",\"div\",\".claude/settings.json\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-baseline gap-x-3 gap-y-1\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-[11px] font-medium tracking-[0.08em] text-critical\",\"children\":\"HIGH\"}],[\"$\",\"span\",null,{\"className\":\"font-mono text-[11px] text-white/50\",\"children\":\"AUTOSTART-003\"}],[\"$\",\"span\",null,{\"className\":\"font-mono text-[12.5px] text-white [overflow-wrap:anywhere]\",\"children\":\".claude/settings.json\"}]]}],[\"$\",\"p\",null,{\"className\":\"mt-2 max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/75\",\"children\":[\"SessionStart hook runs an interpreter\",\", unprompted.\"]}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 font-mono text-[12px] leading-relaxed text-white/85 [overflow-wrap:anywhere]\",\"children\":\"node .vscode/setup.mjs\"}]]}],[\"$\",\"div\",\".vscode/tasks.json\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-baseline gap-x-3 gap-y-1\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-[11px] font-medium tracking-[0.08em] text-critical\",\"children\":\"HIGH\"}],[\"$\",\"span\",null,{\"className\":\"font-mono text-[11px] text-white/50\",\"children\":\"AUTOSTART-003\"}],[\"$\",\"span\",null,{\"className\":\"font-mono text-[12.5px] text-white [overflow-wrap:anywhere]\",\"children\":\".vscode/tasks.json\"}]]}],[\"$\",\"p\",null,{\"className\":\"mt-2 max-w-[62ch] font-body text-[13px] font-light leading-relaxed text-white/75\",\"children\":[\"folderOpen hook runs an interpreter\",\", unprompted.\"]}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 font-mono text-[12px] leading-relaxed text-white/85 [overflow-wrap:anywhere]\",\"children\":\"node .claude/setup.mjs\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "1e:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"The prevention half is\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"wormhole harden\"}],\", and the reason it works is unintuitive: it creates these files when they are \",[\"$\",\"em\",null,{\"children\":\"absent\"}],\", empty and read-only. You cannot\",\" \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"chmod\"}],\"a file that does not exist, and ChainDrop — like Miasma — persists by creating configuration in repositories that never had it. With inert 0444 placeholders in place, the worm’s write is refused by the operating system rather than reported after the fact.\"]}]\n1f:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Two caveats stated plainly. Hardening does not contain an agent running as root, which is common in CI and in default Docker images — root ignores the mode bit. And a scanner that reports a hook after it has fired has told you about an incident, not prevented one; the creation-blocking half is the one that matters here.\"}]\n20:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Worth naming as a finding rather than a feature:\",\" \",[\"$\",\"em\",null,{\"children\":\"testing the tool against this incident surfaced a real bug in it\"}],\". \",[\"$\",\"span\",null,{\"className\":\"font-mono text-[13px]\",\"children\":\"harden\"}],\" checked whether any existing config needed locking, found none, and exited reporting nothing to do — before it ever consulted the list of paths to pre-create. A repository with no writable agent config is precisely the case where pre-creation is the only control that does anything, and it was the case being skipped. Fixed, with a regression test verified to fail against the previous code.\"]}]\n21:[\"$\",\"h2\",null,{\"id\":\"do\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"What to actually do\"}]\n22:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"The vendor guidance below is not ours and does not involve this tool. It is the part that matters most, so it goes first.\"}]\n"])</script>
+    <script>self.__next_f.push([1, "23:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"Check lockfiles, not namespaces\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-body text-[13px] font-medium text-white\",\"children\":\"Check lockfiles, not namespaces\"}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70\",\"children\":\"Compare resolved versions against the published affected lists. Clean versions were restored as `latest` within hours, so a namespace blocklist tells you little and the tag tells you less.\"}]]}],[\"$\",\"div\",\"Treat any environment that installed an affected version as credential-exposed\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-body text-[13px] font-medium text-white\",\"children\":\"Treat any environment that installed an affected version as credential-exposed\"}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70\",\"children\":\"Rotate from a clean host. Remove ~/.local/bin/gh-token-monitor.sh and its service unit before revoking anything.\"}]]}],[\"$\",\"div\",\"Grep your repositories for the hooks\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-body text-[13px] font-medium text-white\",\"children\":\"Grep your repositories for the hooks\"}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70\",\"children\":\"`.claude/settings.json`, `.vscode/tasks.json`, and any `setup.mjs` in either directory. Check every branch — the worm committed via GraphQL to all of them.\"}]]}],[\"$\",\"div\",\"Upgrade npm CLI to v12 and disable install scripts\",{\"className\":\"py-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"font-body text-[13px] font-medium text-white\",\"children\":\"Upgrade npm CLI to v12 and disable install scripts\"}],[\"$\",\"p\",null,{\"className\":\"mt-1.5 max-w-[70ch] font-body text-[13px] font-light leading-relaxed text-white/70\",\"children\":\"v12 blocks unapproved dependency lifecycle scripts by default and adds min-release-age. This is the control that actually breaks the preinstall vector.\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "24:[\"$\",\"h2\",null,{\"id\":\"matters\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Why this one is different\"}]\n25:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"The other pages in this section describe agents talked into moving money. This one is not that. No model was injected, no agent was persuaded of anything — ChainDrop is ordinary malware in the sense that it runs code, steals secrets, and copies itself, and it would have worked in 2015.\"}]\n26:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"What is new is where it chose to live. An agent config file is a uniquely good hiding place: it executes automatically, it survives uninstalling the thing that put it there, it is committed to source control so it spreads to every clone, and — unlike a systemd unit — almost nobody reviews it, because until recently there was nothing dangerous to find. ChainDrop treated agent tooling as infrastructure worth persisting in and agent credentials as secrets worth stealing. That is the shift, and it is now attested by Microsoft, Datadog, StepSecurity, Aikido and Wiz rather than by a research preprint.\"}]\n27:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":[\"Which also fixes the honest gap named on the\",\" \",[\"$\",\"a\",null,{\"href\":\"../cases.html#not-worms\",\"className\":\"text-white underline decoration-white/30 hover:decoration-white\",\"children\":\"index page\"}],\". Self-replication in agent-adjacent software is no longer lab-only, and the config-persistence mechanic is no longer a single incident. The combination still missing from the public record is a self-replicating payload that steals money on-chain — ChainDrop stole wallet files, but it stole them the way it stole SSH keys, not by talking an agent into a payment. That join has not happened yet, and saying otherwise would be the overclaim these pages exist to avoid.\"]}]\n28:[\"$\",\"h2\",null,{\"id\":\"sources\",\"className\":\"mt-20 font-heading text-4xl italic tracking-[-1px] text-white md:text-5xl\",\"children\":\"Sources\"}]\n"])</script>
+    <script>self.__next_f.push([1, "29:[\"$\",\"div\",null,{\"className\":\"liquid-glass mt-6 divide-y divide-white/10 rounded-[1.25rem] px-6 py-2\",\"children\":[[\"$\",\"div\",\"https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"Microsoft Security Blog — ChainDrop supply chain compromise: anatomy of a self-propagating worm\"}]}],[\"$\",\"div\",\"https://www.stepsecurity.io/blog/chaindrop-npm-worm\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://www.stepsecurity.io/blog/chaindrop-npm-worm\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"StepSecurity — ChainDrop npm Worm: Bun-loaded CI/CD credential harvester with Ethereum dead-drop C2\"}]}],[\"$\",\"div\",\"https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"Datadog Security Labs — Worm compromises hundreds of popular npm packages\"}]}],[\"$\",\"div\",\"https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"The Hacker News — Keyv-linked npm worm poisons hundreds of packages, plants Claude Code and VS Code hooks\"}]}],[\"$\",\"div\",\"https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"Aikido — Keyv and friends compromised in active Shai-Hulud supply chain attack\"}]}],[\"$\",\"div\",\"https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack\",{\"className\":\"py-3.5\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack\",\"className\":\"font-body text-[13px] font-light leading-relaxed text-white/80 underline decoration-white/25 hover:text-white hover:decoration-white\",\"children\":\"Wiz — keyv and cacheable npm package hijacked in supply chain attack\"}]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "2a:[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-[72ch] font-body text-sm font-light leading-relaxed text-white/80 md:text-[15px]\",\"children\":\"Package counts vary between these reports and the range is given above rather than a single convenient number. Where a detail appears in only one source — the token-monitor punishment handler, the Russian-language exit, the PyPI overlap — the source is named inline.\"}]\n32:T76b,"])</script>
+    <script>self.__next_f.push([1, "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"ChainDrop: the npm worm that wrote itself into agent config\",\"description\":\"444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it.\",\"datePublished\":\"2026-08-05\",\"about\":{\"@type\":\"Thing\",\"name\":\"ChainDrop npm supply chain worm\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Agent Wormhole\",\"url\":\"https://agentwormhole.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://agentwormhole.com/cases/chaindrop\"},\"citation\":[{\"@type\":\"CreativeWork\",\"name\":\"Microsoft Security Blog — ChainDrop supply chain compromise: anatomy of a self-propagating worm\",\"url\":\"https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/\"},{\"@type\":\"CreativeWork\",\"name\":\"StepSecurity — ChainDrop npm Worm: Bun-loaded CI/CD credential harvester with Ethereum dead-drop C2\",\"url\":\"https://www.stepsecurity.io/blog/chaindrop-npm-worm\"},{\"@type\":\"CreativeWork\",\"name\":\"Datadog Security Labs — Worm compromises hundreds of popular npm packages\",\"url\":\"https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/\"},{\"@type\":\"CreativeWork\",\"name\":\"The Hacker News — Keyv-linked npm worm poisons hundreds of packages, plants Claude Code and VS Code hooks\",\"url\":\"https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html\"},{\"@type\":\"CreativeWork\",\"name\":\"Aikido — Keyv and friends compromised in active Shai-Hulud supply chain attack\",\"url\":\"https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack\"},{\"@type\":\"CreativeWork\",\"name\":\"Wiz — keyv and cacheable npm package hijacked in supply chain attack\",\"url\":\"https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack\"}]}"])</script>
+    <script>self.__next_f.push([1, "2b:[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$32\"}}]\n2c:[\"$\",\"div\",null,{\"className\":\"mt-20 border-t border-white/10 pt-6 font-body text-xs text-white/50\",\"children\":[\"Agent Wormhole · Apache 2.0 ·\",\" \",[\"$\",\"a\",null,{\"href\":\"https://github.com/runningoffcode/agent-wormhole\",\"className\":\"hover:text-white\",\"children\":\"GitHub\"}],\" \",\"·\",\" \",[\"$\",\"a\",null,{\"href\":\"../docs.html\",\"className\":\"hover:text-white\",\"children\":\"Docs\"}],\" \",\"·\",\" \",[\"$\",\"a\",null,{\"href\":\"../cases.html\",\"className\":\"hover:text-white\",\"children\":\"Cases\"}]]}]\n2d:[\"$\",\"$L33\",null,{\"children\":[\"$\",\"$34\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@35\"}]}]\n36:[]\n2e:\"$W36\"\n2f:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L37\",null,{\"children\":\"$L38\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L39\",null,{\"children\":[\"$\",\"$34\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L3a\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n31:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/42d6h97iiref5.css?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script>
+    <script>self.__next_f.push([1, "38:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, maximum-scale=5\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"#000000\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "3b:I[27201,[\"/_next/static/chunks/1d4h-sglyo8ft.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"/_next/static/chunks/14mumt5_n0xhi.js?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"],\"IconMark\"]\n35:null\n"])</script>
+    <script>self.__next_f.push([1, "3a:[[\"$\",\"title\",\"0\",{\"children\":\"ChainDrop — the npm worm that hid in agent config · Agent Wormhole\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"August 4, 2026: a self-propagating npm worm poisoned 444 packages in under four hours, stole agent credentials, and planted a SessionStart hook in .claude/settings.json. What it did, and which control refuses it.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"application-name\",\"content\":\"Agent Wormhole\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"ChainDrop,Shai-Hulud,Mini Shai-Hulud,npm supply chain attack,keyv compromise,npm worm,Claude Code security,SessionStart hook malware,agent config persistence,EtherHiding\"}],[\"$\",\"meta\",\"4\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"link\",\"5\",{\"rel\":\"canonical\",\"href\":\"https://agentwormhole.com/cases/chaindrop\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"ChainDrop: the npm worm that wrote itself into agent config\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:url\",\"content\":\"https://agentwormhole.com/cases/chaindrop\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image\",\"content\":\"https://agentwormhole.com/cases/chaindrop/opengraph-image.jpg?opengraph-image.099zm_kns8_v8.jpg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:type\",\"content\":\"image/jpeg\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:image:alt\",\"content\":\"Agent Wormhole case study\\n\"}],[\"$\",\"meta\",\"14\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"15\",{\"property\":\"article:published_time\",\"content\":\"2026-08-05T00:00:00.000Z\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:title\",\"content\":\"ChainDrop: the npm worm that wrote itself into agent config\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:description\",\"content\":\"444 npm packages in under four hours. It harvested agent credentials and committed a SessionStart hook into .claude/settings.json, so the payload outlives the dependency that delivered it.\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:image\",\"content\":\"https://agentwormhole.com/cases/chaindrop/twitter-image.jpg?twitter-image.099zm_kns8_v8.jpg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image:alt\",\"content\":\"Agent Wormhole case study\\n\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image:type\",\"content\":\"image/jpeg\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"link\",\"24\",{\"rel\":\"icon\",\"href\":\"/icon.svg?icon.3jui13yoeogks.svg?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"any\",\"type\":\"image/svg+xml\"}],[\"$\",\"link\",\"25\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-icon.png?apple-icon.0m4lat34t_1d5.png?dpl=dpl_43V7jXHFqFa5nPf1BDPpNZJpDPZ7\",\"sizes\":\"180x180\",\"type\":\"image/png\"}],[\"$\",\"$L3b\",\"26\",{}]]\n"])</script>
+</body>
+
+</html>
